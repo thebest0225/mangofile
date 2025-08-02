@@ -375,4 +375,6 @@ function downloadFile(postIndex, fileIndex) {
 }
 
 // 페이지 로드 시 로그인 확인
-checkLogin();
+window.addEventListener('DOMContentLoaded', function() {
+  checkLogin();
+});

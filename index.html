@@ -58,13 +58,6 @@
           </div>
         </div>
         
-        <!-- 검색 영역 -->
-        <div class="search-section">
-          <div class="search-group">
-            <input type="text" id="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
-            <button onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
-          </div>
-        </div>
         <!-- 글쓰기 폼 -->
         <div id="writeForm" class="write-form hidden">
           <div class="write-form-header">
@@ -100,6 +93,14 @@
         <div id="boardList" class="board-list">
           <!-- 게시글 목록이 여기에 표시됩니다 -->
         </div>
+        
+        <!-- 검색 영역 -->
+        <div class="search-section">
+          <div class="search-group">
+            <input type="text" id="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
+            <button onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -120,13 +121,5 @@
   </div>
 
   <script src="script.js"></script>
-  <script>
-    function downloadFile(postIndex, fileIndex) {
-      // Implement the download functionality here.
-      // You'll need to access the file data and trigger a download.
-      // This is a placeholder; replace with actual implementation.
-      alert(`Downloading file ${fileIndex} from post ${postIndex}`);
-    }
-  </script>
 </body>
 </html>
