@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mangofile</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon2.png">
     <style>
         * {
             margin: 0;
@@ -204,7 +204,11 @@
                         <img src="logo.png" alt="Mangofile" style="height: 40px;">
                         <h1>Mangofile</h1>
                     </div>
+                    <div style="text-align: center; flex: 1;">
+                        <img src="logo.png" alt="Mangofile" style="height: 50px; cursor: pointer;" onclick="location.reload()">
+                    </div>
                     <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-secondary" onclick="location.reload()" title="새로고침">🔄</button>
                         <button class="btn" onclick="showWriteForm()">글쓰기</button>
                         <button class="btn btn-secondary" onclick="logout()">로그아웃</button>
                     </div>
