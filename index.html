@@ -38,10 +38,13 @@
         <img src="logo.png" alt="Mangofile" class="login-logo">
         <h2 class="login-title">Mangofile</h2>
       </div>
-      <div class="form-group">
-        <input type="password" id="password" class="form-control" placeholder="비밀번호를 입력하세요" maxlength="4">
-      </div>
-      <button onclick="login()" class="btn login-btn">로그인</button>
+      <form id="loginFormElement" name="loginForm">
+        <div class="form-group">
+          <label for="password" class="sr-only">비밀번호</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="비밀번호를 입력하세요" maxlength="4">
+        </div>
+        <button type="button" onclick="login()" class="btn login-btn">로그인</button>
+      </form>
     </div>
 
     <!-- 게시판 -->
@@ -64,21 +67,21 @@
             <h4 id="formTitle">글쓰기</h4>
             <button onclick="hideWriteForm()" class="btn btn-small" style="background: #6c757d;">취소</button>
           </div>
-          <form id="postForm">
+          <form id="postForm" name="postForm">
             <div class="form-group">
-              <label>제목</label>
-              <input type="text" id="postTitle" class="form-control" required>
+              <label for="postTitle">제목</label>
+              <input type="text" id="postTitle" name="postTitle" class="form-control" required>
             </div>
 
             <div class="form-group">
-              <label>설명</label>
-              <textarea id="postDescription" class="form-control" rows="3"></textarea>
+              <label for="postDescription">설명</label>
+              <textarea id="postDescription" name="postDescription" class="form-control" rows="3"></textarea>
             </div>
 
             <div class="form-group">
-              <label>파일 업로드 (최대 4개, 각 파일 최대 500MB)</label>
+              <label for="multipleFiles">파일 업로드 (최대 4개, 각 파일 최대 500MB)</label>
               <div class="file-upload-group">
-                <input type="file" id="multipleFiles" multiple class="form-control" style="margin-bottom: 8px;">
+                <input type="file" id="multipleFiles" name="multipleFiles" multiple class="form-control" style="margin-bottom: 8px;">
                 <div id="selectedFiles"></div>
               </div>
             </div>
@@ -97,8 +100,9 @@
         <!-- 검색 영역 -->
         <div class="search-section">
           <div class="search-group">
-            <input type="text" id="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
-            <button onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
+            <label for="searchInput" class="sr-only">검색</label>
+            <input type="text" id="searchInput" name="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
+            <button type="button" onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
           </div>
         </div>
       </div>
