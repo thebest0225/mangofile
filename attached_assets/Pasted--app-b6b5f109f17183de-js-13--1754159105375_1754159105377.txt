@@ -1,0 +1,1695 @@
+_app-b6b5f109f17183de.js:13 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-b6b5f109f17183de.js:13 [LaunchDarkly] LaunchDarkly client initialized
+/~:1 Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <div.cm-content cm-lineWrapping>
+Ancestor with aria-hidden: <div. useView_view__C2mnv css-17qdd0f Surface_surfaceRoot__TeA2u> null
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'battery'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'layout-animations'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'navigation-override'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'oversized-images'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'publickey-credentials'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'speaker-selection'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'unoptimized-images'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'unsized-media'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Unrecognized feature: 'pointer-lock'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-9bfc368571c1b99b.js:1
+framework-9bfc368571c1b99b.js:1 Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-9bfc368571c1b99b.js:1
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 cursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41830)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 removeCursor listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41934)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileSavedChanged listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:42048)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43298)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fsError listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43484)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 transparentReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:44319)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 changes listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:46205)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitComplete listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41375)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileDirty listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41495)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 fileClean listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41610)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 commitStart listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:41727)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+_app-b6b5f109f17183de.js:13 MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 promptUserReconnect listeners added. Use emitter.setMaxListeners() to increase limit
+    at c (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:87556)
+    at u.addListener (https://cdn.replit.com/_next/static/chunks/4102-59533d310116e6bc.js:1:90442)
+    at h (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:43001)
+    at Object.watchTextFile (https://cdn.replit.com/_next/static/chunks/4359-38586317e2ef9390.js:1:47153)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163406
+    at Array.map (<anonymous>)
+    at https://cdn.replit.com/_next/static/chunks/4866-1942887e432c48d1.js:1:163381
+    at oO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:125395)
+    at uB (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:154390)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152776
+    at uO (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:152842)
+    at u_ (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:137506)
+    at r6 (https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:86196)
+    at https://cdn.replit.com/_next/static/chunks/framework-9bfc368571c1b99b.js:1:134884
+(anonymous) @ _app-b6b5f109f17183de.js:13
+workspace_iframe.html:32 Unrecognized feature: 'ambient-light-sensor'.
+workspace_iframe.html:32 Unrecognized feature: 'ambient-light-sensor'.
+workspace_iframe.html:32 Unrecognized feature: 'battery'.
+workspace_iframe.html:32 Unrecognized feature: 'battery'.
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-not-rendered'.
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-not-rendered'.
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-out-of-viewport'.
+workspace_iframe.html:32 Unrecognized feature: 'layout-animations'.
+workspace_iframe.html:32 Unrecognized feature: 'layout-animations'.
+workspace_iframe.html:32 Unrecognized feature: 'legacy-image-formats'.
+workspace_iframe.html:32 Unrecognized feature: 'legacy-image-formats'.
+workspace_iframe.html:32 Unrecognized feature: 'navigation-override'.
+workspace_iframe.html:32 Unrecognized feature: 'navigation-override'.
+workspace_iframe.html:32 Unrecognized feature: 'oversized-images'.
+workspace_iframe.html:32 Unrecognized feature: 'oversized-images'.
+workspace_iframe.html:32 Unrecognized feature: 'publickey-credentials'.
+workspace_iframe.html:32 Unrecognized feature: 'publickey-credentials'.
+workspace_iframe.html:32 Unrecognized feature: 'speaker-selection'.
+workspace_iframe.html:32 Unrecognized feature: 'speaker-selection'.
+workspace_iframe.html:32 Unrecognized feature: 'unoptimized-images'.
+workspace_iframe.html:32 Unrecognized feature: 'unoptimized-images'.
+workspace_iframe.html:32 Unrecognized feature: 'unsized-media'.
+workspace_iframe.html:32 Unrecognized feature: 'unsized-media'.
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowfullscreen'.
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowfullscreen'.
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowpaymentrequest'.
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowpaymentrequest'.
