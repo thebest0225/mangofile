@@ -3,30 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>게시판</title>
+  <title>Mangofile</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="container">
-    <!-- 메인 로고 -->
-    <div class="main-logo-container">
-      <img src="logo.png" alt="로고" class="main-logo" onclick="refreshBoard()" style="width: 200px; height: auto;">
-    </div>
-
     <!-- 로그인 폼 -->
     <div id="loginForm" class="login-form">
-      <h3 style="margin-bottom: 12px; text-align: center;">로그인</h3>
-      <div class="form-group">
-        <input type="password" id="password" class="form-control" placeholder="비밀번호" maxlength="4">
+      <div class="login-logo-container">
+        <img src="logo.png" alt="Mangofile" class="login-logo">
+        <h2 class="login-title">Mangofile</h2>
       </div>
-      <button onclick="login()" class="btn" style="width: 100%;">로그인</button>
+      <div class="form-group">
+        <input type="password" id="password" class="form-control" placeholder="비밀번호를 입력하세요" maxlength="4">
+      </div>
+      <button onclick="login()" class="btn login-btn">로그인</button>
     </div>
 
     <!-- 게시판 -->
     <div id="boardContainer" class="hidden">
       <div class="board">
         <div class="board-header">
-          <h3>게시판</h3>
+          <div class="board-logo-section">
+            <img src="logo.png" alt="Mangofile" class="board-logo" onclick="refreshBoard()">
+            <h3>Mangofile</h3>
+          </div>
           <div>
             <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
             <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>

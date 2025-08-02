@@ -117,7 +117,7 @@ function displaySelectedFiles(files) {
 }
 
 // 글 저장
-document.getElementById('postForm').addEventListener('submit', function(e) {
+document.getElementById('postForm').addEventListener('submit', async function(e) {
   e.preventDefault();
   
   const title = document.getElementById('postTitle').value;
@@ -133,11 +133,15 @@ document.getElementById('postForm').addEventListener('submit', function(e) {
     const file = selectedFiles[i];
     const desc = fileDescriptions[i] ? fileDescriptions[i].value : '';
     
+    // 파일을 Base64로 변환하여 저장
+    const fileData = await fileToBase64(file);
+    
     files.push({
       file: {
         name: file.name,
         size: file.size,
-        type: file.type
+        type: file.type,
+        data: fileData
       },
       description: desc
     });
@@ -189,11 +193,16 @@ function viewPost(index) {
   const uploadedFiles = post.files.filter(f => f.file);
   if (uploadedFiles.length > 0) {
     content += '<div><strong>첨부파일:</strong><ul style="margin: 8px 0; padding-left: 20px;">';
-    uploadedFiles.forEach(f => {
+    uploadedFiles.forEach((f, idx) => {
       content += `
-        <li style="margin-bottom: 4px;">
-          <strong>${f.file.name}</strong> (${formatFileSize(f.file.size)})
-          ${f.description ? `<br><span style="color: #666; font-size: 11px;">${f.description}</span>` : ''}
+        <li style="margin-bottom: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <strong>${f.file.name}</strong> (${formatFileSize(f.file.size)})
+              ${f.description ? `<br><span style="color: #666; font-size: 11px;">${f.description}</span>` : ''}
+            </div>
+            <button onclick="downloadFile(${index}, ${idx})" class="btn btn-small" style="margin-left: 8px;">다운로드</button>
+          </div>
         </li>
       `;
     });
@@ -266,26 +275,50 @@ function refreshBoard() {
   renderPosts();
 }
 
+// 파일을 Base64로 변환
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+  });
+}
+
+// Base64를 Blob으로 변환
+function base64ToBlob(base64, contentType) {
+  const byteCharacters = atob(base64.split(',')[1]);
+  const byteNumbers = new Array(byteCharacters.length);
+  for (let i = 0; i < byteCharacters.length; i++) {
+    byteNumbers[i] = byteCharacters.charCodeAt(i);
+  }
+  const byteArray = new Uint8Array(byteNumbers);
+  return new Blob([byteArray], { type: contentType });
+}
+
 // 파일 다운로드
 function downloadFile(postIndex, fileIndex) {
   const post = posts[postIndex];
   const uploadedFiles = post.files.filter(f => f.file);
   const file = uploadedFiles[fileIndex];
   
-  if (file && file.file) {
-    // 파일 데이터를 가상으로 생성 (실제로는 업로드된 파일 데이터가 있어야 함)
-    const blob = new Blob(['파일 내용을 표시할 수 없습니다. 실제 파일 업로드 시 다운로드가 가능합니다.'], {
-      type: file.file.type || 'application/octet-stream'
-    });
-    
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = file.file.name;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+  if (file && file.file && file.file.data) {
+    try {
+      const blob = base64ToBlob(file.file.data, file.file.type);
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = file.file.name;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      alert('파일 다운로드 중 오류가 발생했습니다.');
+      console.error('Download error:', error);
+    }
+  } else {
+    alert('파일 데이터를 찾을 수 없습니다.');
   }
 }
 

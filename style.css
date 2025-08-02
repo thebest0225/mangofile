@@ -20,31 +20,40 @@ html, body {
   padding: 8px;
 }
 
-.main-logo-container {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.main-logo {
-  height: 120px;
-  width: auto;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.main-logo:hover {
-  opacity: 0.8;
-}
-
 .login-form {
   background: white;
-  border-radius: 6px;
-  padding: 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  margin-top: 20vh;
-  max-width: 300px;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-top: 15vh;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.login-logo-container {
+  margin-bottom: 24px;
+}
+
+.login-logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+.login-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .board {
@@ -55,11 +64,36 @@ html, body {
 }
 
 .board-header {
-  padding: 12px 16px;
+  padding: 16px 20px;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.board-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.board-logo {
+  height: 32px;
+  width: auto;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.board-logo:hover {
+  opacity: 0.8;
+}
+
+.board-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .board-list {
@@ -186,14 +220,32 @@ html, body {
     padding: 12px;
   }
   
-  .main-logo {
-    height: 100px;
+  .login-form {
+    margin-top: 20vh;
+    max-width: 320px;
+    padding: 24px 20px;
+  }
+  
+  .login-logo {
+    height: 60px;
+  }
+  
+  .login-title {
+    font-size: 20px;
   }
   
   .board-header {
-    padding: 8px 12px;
+    padding: 12px 16px;
     flex-direction: column;
+    gap: 12px;
+  }
+  
+  .board-logo-section {
     gap: 8px;
+  }
+  
+  .board-logo {
+    height: 28px;
   }
   
   .board-item {
