@@ -52,27 +52,9 @@
 
         <div class="form-group">
           <label>파일 업로드 (최대 4개, 각 파일 최대 500MB)</label>
-          <div id="fileUploads">
-            <div class="file-upload-group">
-              <label>파일 1</label>
-              <input type="file" class="file-input" data-index="0">
-              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
-            </div>
-            <div class="file-upload-group">
-              <label>파일 2</label>
-              <input type="file" class="file-input" data-index="1">
-              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
-            </div>
-            <div class="file-upload-group">
-              <label>파일 3</label>
-              <input type="file" class="file-input" data-index="2">
-              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
-            </div>
-            <div class="file-upload-group">
-              <label>파일 4</label>
-              <input type="file" class="file-input" data-index="3">
-              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
-            </div>
+          <div class="file-upload-group">
+            <input type="file" id="multipleFiles" multiple class="form-control" style="margin-bottom: 8px;">
+            <div id="selectedFiles"></div>
           </div>
         </div>
 

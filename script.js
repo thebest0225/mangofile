@@ -68,6 +68,7 @@ function showWriteModal() {
   currentEditId = null;
   document.getElementById('modalTitle').textContent = '글쓰기';
   document.getElementById('postForm').reset();
+  document.getElementById('selectedFiles').innerHTML = '';
   document.getElementById('writeModal').style.display = 'block';
 }
 
@@ -80,6 +81,41 @@ function closeViewModal() {
   document.getElementById('viewModal').style.display = 'none';
 }
 
+// 파일 선택 이벤트 처리
+document.getElementById('multipleFiles').addEventListener('change', function(e) {
+  displaySelectedFiles(e.target.files);
+});
+
+function displaySelectedFiles(files) {
+  const container = document.getElementById('selectedFiles');
+  container.innerHTML = '';
+  
+  if (files.length > 4) {
+    alert('최대 4개 파일까지만 업로드 가능합니다.');
+    document.getElementById('multipleFiles').value = '';
+    return;
+  }
+  
+  Array.from(files).forEach((file, index) => {
+    if (file.size > 500 * 1024 * 1024) {
+      alert(`${file.name} 파일 크기가 500MB를 초과합니다.`);
+      document.getElementById('multipleFiles').value = '';
+      container.innerHTML = '';
+      return;
+    }
+    
+    const fileDiv = document.createElement('div');
+    fileDiv.className = 'file-upload-group';
+    fileDiv.innerHTML = `
+      <div style="font-size: 11px; margin-bottom: 4px;">
+        <strong>${file.name}</strong> (${formatFileSize(file.size)})
+      </div>
+      <input type="text" class="file-description form-control" placeholder="파일 설명" data-index="${index}">
+    `;
+    container.appendChild(fileDiv);
+  });
+}
+
 // 글 저장
 document.getElementById('postForm').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -89,39 +125,30 @@ document.getElementById('postForm').addEventListener('submit', function(e) {
   
   // 파일 정보 수집
   const files = [];
-  const fileInputs = document.querySelectorAll('.file-input');
+  const fileInput = document.getElementById('multipleFiles');
+  const selectedFiles = fileInput.files;
   const fileDescriptions = document.querySelectorAll('.file-description');
   
-  for (let i = 0; i < 4; i++) {
-    const file = fileInputs[i].files[0];
-    const desc = fileDescriptions[i].value;
+  for (let i = 0; i < selectedFiles.length; i++) {
+    const file = selectedFiles[i];
+    const desc = fileDescriptions[i] ? fileDescriptions[i].value : '';
     
-    if (file) {
-      // 파일 크기 체크 (500MB)
-      if (file.size > 500 * 1024 * 1024) {
-        alert('파일 크기는 500MB를 초과할 수 없습니다.');
-        return;
-      }
-      
-      files.push({
-        file: {
-          name: file.name,
-          size: file.size,
-          type: file.type
-        },
-        description: desc
-      });
-    } else if (desc) {
-      files.push({
-        file: null,
-        description: desc
-      });
-    } else {
-      files.push({
-        file: null,
-        description: ''
-      });
-    }
+    files.push({
+      file: {
+        name: file.name,
+        size: file.size,
+        type: file.type
+      },
+      description: desc
+    });
+  }
+  
+  // 빈 슬롯을 4개까지 채우기
+  while (files.length < 4) {
+    files.push({
+      file: null,
+      description: ''
+    });
   }
   
   const post = {
@@ -185,13 +212,24 @@ function editPost() {
   document.getElementById('postTitle').value = post.title;
   document.getElementById('postDescription').value = post.description;
   
-  // 파일 설명 복원
-  const fileDescriptions = document.querySelectorAll('.file-description');
-  post.files.forEach((f, index) => {
-    if (index < 4 && fileDescriptions[index]) {
-      fileDescriptions[index].value = f.description || '';
-    }
-  });
+  // 기존 파일 정보 표시 (파일은 다시 선택해야 함)
+  const container = document.getElementById('selectedFiles');
+  container.innerHTML = '';
+  
+  const uploadedFiles = post.files.filter(f => f.file);
+  if (uploadedFiles.length > 0) {
+    const infoDiv = document.createElement('div');
+    infoDiv.style.cssText = 'background: #f0f0f0; padding: 8px; border-radius: 4px; margin-bottom: 8px; font-size: 11px;';
+    infoDiv.innerHTML = `
+      <strong>기존 파일:</strong><br>
+      ${uploadedFiles.map(f => `• ${f.file.name} ${f.description ? `(${f.description})` : ''}`).join('<br>')}
+      <br><br><em>파일을 수정하려면 다시 선택해주세요.</em>
+    `;
+    container.appendChild(infoDiv);
+  }
+  
+  // 파일 입력 초기화
+  document.getElementById('multipleFiles').value = '';
   
   closeViewModal();
   document.getElementById('writeModal').style.display = 'block';
