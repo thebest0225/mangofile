@@ -1,16 +1,104 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>게시판</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  Hello world
+  <div class="container">
+    <!-- 로그인 폼 -->
+    <div id="loginForm" class="login-form">
+      <h3 style="margin-bottom: 12px; text-align: center;">로그인</h3>
+      <div class="form-group">
+        <input type="password" id="password" class="form-control" placeholder="비밀번호" maxlength="4">
+      </div>
+      <button onclick="login()" class="btn" style="width: 100%;">로그인</button>
+    </div>
+
+    <!-- 게시판 -->
+    <div id="boardContainer" class="hidden">
+      <div class="board">
+        <div class="board-header">
+          <h3>게시판</h3>
+          <div>
+            <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
+            <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>
+          </div>
+        </div>
+        <div id="boardList" class="board-list">
+          <!-- 게시글 목록이 여기에 표시됩니다 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 글쓰기/수정 모달 -->
+  <div id="writeModal" class="modal">
+    <div class="modal-content">
+      <h4 id="modalTitle" style="margin-bottom: 12px;">글쓰기</h4>
+      <form id="postForm">
+        <div class="form-group">
+          <label>제목</label>
+          <input type="text" id="postTitle" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label>파일 설명</label>
+          <textarea id="postDescription" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>파일 업로드 (최대 4개, 각 파일 최대 500MB)</label>
+          <div id="fileUploads">
+            <div class="file-upload-group">
+              <label>파일 1</label>
+              <input type="file" class="file-input" data-index="0">
+              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
+            </div>
+            <div class="file-upload-group">
+              <label>파일 2</label>
+              <input type="file" class="file-input" data-index="1">
+              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
+            </div>
+            <div class="file-upload-group">
+              <label>파일 3</label>
+              <input type="file" class="file-input" data-index="2">
+              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
+            </div>
+            <div class="file-upload-group">
+              <label>파일 4</label>
+              <input type="file" class="file-input" data-index="3">
+              <input type="text" class="file-description form-control" placeholder="파일 설명" style="margin-top: 4px;">
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: right; margin-top: 12px;">
+          <button type="button" onclick="closeModal()" class="btn" style="background: #6c757d;">취소</button>
+          <button type="submit" class="btn">저장</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 글 상세보기 모달 -->
+  <div id="viewModal" class="modal">
+    <div class="modal-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <h4 id="viewTitle"></h4>
+        <div>
+          <button onclick="editPost()" class="btn btn-small">수정</button>
+          <button onclick="deletePost()" class="btn btn-small btn-danger">삭제</button>
+          <button onclick="closeViewModal()" class="btn btn-small" style="background: #6c757d;">닫기</button>
+        </div>
+      </div>
+      <div id="viewContent"></div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
