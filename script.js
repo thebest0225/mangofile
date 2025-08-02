@@ -266,5 +266,28 @@ function refreshBoard() {
   renderPosts();
 }
 
+// 파일 다운로드
+function downloadFile(postIndex, fileIndex) {
+  const post = posts[postIndex];
+  const uploadedFiles = post.files.filter(f => f.file);
+  const file = uploadedFiles[fileIndex];
+  
+  if (file && file.file) {
+    // 파일 데이터를 가상으로 생성 (실제로는 업로드된 파일 데이터가 있어야 함)
+    const blob = new Blob(['파일 내용을 표시할 수 없습니다. 실제 파일 업로드 시 다운로드가 가능합니다.'], {
+      type: file.file.type || 'application/octet-stream'
+    });
+    
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = file.file.name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+}
+
 // 페이지 로드 시 로그인 확인
 checkLogin();
