@@ -29,7 +29,7 @@
   <div class="container">
     <!-- 메인 로고 -->
     <div class="main-logo">
-      <img src="logo.png" alt="Mangofile" onclick="refreshBoard()">
+      <img src="logo.png" alt="Mangofile" onclick="location.reload()">
     </div>
     
     <!-- 로그인 폼 -->
@@ -52,15 +52,17 @@
             <img src="logo.png" alt="Mangofile" class="board-logo" onclick="refreshBoard()">
             <h3>Mangofile</h3>
           </div>
-          <div class="board-controls">
-            <div class="search-group">
-              <input type="text" id="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
-              <button onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
-            </div>
-            <div class="button-group">
-              <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
-              <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>
-            </div>
+          <div class="button-group">
+            <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
+            <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>
+          </div>
+        </div>
+        
+        <!-- 검색 영역 -->
+        <div class="search-section">
+          <div class="search-group">
+            <input type="text" id="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
+            <button onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
           </div>
         </div>
         <!-- 글쓰기 폼 -->

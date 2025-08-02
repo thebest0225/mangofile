@@ -95,25 +95,26 @@ html, body {
   gap: 12px;
 }
 
-.board-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-end;
+.search-section {
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
 }
 
 .search-group {
   display: flex;
-  gap: 4px;
+  gap: 8px;
   align-items: center;
+  justify-content: center;
 }
 
 .search-input {
-  padding: 4px 8px;
+  padding: 6px 12px;
   border: 1px solid #ddd;
-  border-radius: 3px;
-  font-size: 12px;
-  width: 200px;
+  border-radius: 4px;
+  font-size: 13px;
+  width: 300px;
+  max-width: 100%;
 }
 
 .button-group {
@@ -311,26 +312,23 @@ html, body {
   
   .board-header {
     padding: 12px 16px;
-    flex-direction: column;
-    gap: 12px;
   }
   
   .board-logo-section {
     gap: 8px;
   }
   
-  .board-controls {
-    width: 100%;
-    align-items: stretch;
+  .search-section {
+    padding: 12px 16px;
   }
   
   .search-group {
-    justify-content: stretch;
+    flex-direction: column;
+    gap: 8px;
   }
   
   .search-input {
-    flex: 1;
-    width: auto;
+    width: 100%;
   }
   
   .button-group {
