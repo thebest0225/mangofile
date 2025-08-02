@@ -198,17 +198,17 @@
 
         <!-- 게시판 화면 -->
         <div id="boardScreen" class="hidden">
+            <!-- 로고 영역 -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="logo.png" alt="Mangofile" style="height: 60px; cursor: pointer;" onclick="location.reload()">
+            </div>
+            
             <div class="board-container">
                 <div class="board-header">
                     <div style="display: flex; align-items: center; gap: 15px;">
-                        <img src="logo.png" alt="Mangofile" style="height: 40px;">
                         <h1>Mangofile</h1>
                     </div>
-                    <div style="text-align: center; flex: 1;">
-                        <img src="logo.png" alt="Mangofile" style="height: 50px; cursor: pointer;" onclick="location.reload()">
-                    </div>
                     <div style="display: flex; gap: 10px;">
-                        <button class="btn btn-secondary" onclick="location.reload()" title="새로고침">🔄</button>
                         <button class="btn" onclick="showWriteForm()">글쓰기</button>
                         <button class="btn btn-secondary" onclick="logout()">로그아웃</button>
                     </div>
