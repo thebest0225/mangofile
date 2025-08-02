@@ -20,12 +20,29 @@ html, body {
   padding: 8px;
 }
 
+.main-logo {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.main-logo img {
+  height: 120px;
+  width: auto;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.main-logo img:hover {
+  opacity: 0.8;
+}
+
 .login-form {
   background: white;
   border-radius: 12px;
   padding: 32px 24px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  margin-top: 15vh;
+  margin-top: 5vh;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -215,13 +232,22 @@ html, body {
     padding: 4px;
   }
   
+  .main-logo {
+    padding: 15px 0;
+    margin-bottom: 15px;
+  }
+  
+  .main-logo img {
+    height: 80px;
+  }
+  
   .modal-content {
     width: 95vw;
     padding: 12px;
   }
   
   .login-form {
-    margin-top: 20vh;
+    margin-top: 10vh;
     max-width: 320px;
     padding: 24px 20px;
   }
