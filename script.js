@@ -72,18 +72,21 @@ function renderPosts() {
   }).join('');
 }
 
-// 글쓰기 모달 표시
+// 글쓰기 폼 표시
 function showWriteModal() {
   currentEditId = null;
-  document.getElementById('modalTitle').textContent = '글쓰기';
+  document.getElementById('formTitle').textContent = '글쓰기';
   document.getElementById('postForm').reset();
   document.getElementById('selectedFiles').innerHTML = '';
-  document.getElementById('writeModal').style.display = 'block';
+  document.getElementById('writeForm').classList.remove('hidden');
+  
+  // 폼으로 스크롤
+  document.getElementById('writeForm').scrollIntoView({ behavior: 'smooth' });
 }
 
-// 모달 닫기
-function closeModal() {
-  document.getElementById('writeModal').style.display = 'none';
+// 글쓰기 폼 숨기기
+function hideWriteForm() {
+  document.getElementById('writeForm').classList.add('hidden');
 }
 
 function closeViewModal() {
@@ -179,7 +182,7 @@ document.getElementById('postForm').addEventListener('submit', async function(e)
   
   localStorage.setItem('posts', JSON.stringify(posts));
   renderPosts();
-  closeModal();
+  hideWriteForm();
 });
 
 // 글 보기
@@ -226,7 +229,7 @@ function viewPost(index) {
 function editPost() {
   const post = posts[currentEditId];
   
-  document.getElementById('modalTitle').textContent = '글 수정';
+  document.getElementById('formTitle').textContent = '글 수정';
   document.getElementById('postTitle').value = post.title;
   document.getElementById('postDescription').value = post.description;
   
@@ -250,7 +253,8 @@ function editPost() {
   document.getElementById('multipleFiles').value = '';
   
   closeViewModal();
-  document.getElementById('writeModal').style.display = 'block';
+  document.getElementById('writeForm').classList.remove('hidden');
+  document.getElementById('writeForm').scrollIntoView({ behavior: 'smooth' });
 }
 
 // 글 삭제
@@ -330,16 +334,7 @@ function fileToBase64(file) {
   });
 }
 
-// Base64를 Blob으로 변환
-function base64ToBlob(base64, contentType) {
-  const byteCharacters = atob(base64.split(',')[1]);
-  const byteNumbers = new Array(byteCharacters.length);
-  for (let i = 0; i < byteCharacters.length; i++) {
-    byteNumbers[i] = byteCharacters.charCodeAt(i);
-  }
-  const byteArray = new Uint8Array(byteNumbers);
-  return new Blob([byteArray], { type: contentType });
-}
+
 
 // 파일 다운로드
 function downloadFile(postIndex, fileIndex) {
@@ -349,17 +344,29 @@ function downloadFile(postIndex, fileIndex) {
   
   if (file && file.file && file.file.data) {
     try {
-      const blob = base64ToBlob(file.file.data, file.file.type);
+      // data:image/png;base64, 형태에서 data: 부분 제거
+      const base64Data = file.file.data.split(',')[1];
+      const byteCharacters = atob(base64Data);
+      const byteNumbers = new Array(byteCharacters.length);
+      
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      
+      const byteArray = new Uint8Array(byteNumbers);
+      const blob = new Blob([byteArray], { type: file.file.type });
+      
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
       a.download = file.file.name;
+      a.style.display = 'none';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
     } catch (error) {
-      alert('파일 다운로드 중 오류가 발생했습니다.');
+      alert('파일 다운로드 중 오류가 발생했습니다: ' + error.message);
       console.error('Download error:', error);
     }
   } else {

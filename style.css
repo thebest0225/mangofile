@@ -249,6 +249,29 @@ html, body {
   font-weight: 500;
 }
 
+.write-form {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.write-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.write-form-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
 .hidden {
   display: none;
 }
