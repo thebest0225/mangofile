@@ -53,7 +53,7 @@ html, body {
 }
 
 .logo {
-  height: 24px;
+  height: 32px;
   width: auto;
   cursor: pointer;
   transition: opacity 0.2s;
@@ -198,7 +198,7 @@ html, body {
   }
   
   .logo {
-    height: 20px;
+    height: 28px;
   }
   
   .board-item {
