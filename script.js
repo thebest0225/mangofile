@@ -1,6 +1,8 @@
 
 let posts = JSON.parse(localStorage.getItem('posts')) || [];
+let filteredPosts = [];
 let currentEditId = null;
+let currentSearchTerm = '';
 const PASSWORD = '0225';
 
 // 로그인 확인
@@ -47,20 +49,27 @@ function showBoard() {
 // 게시글 목록 렌더링
 function renderPosts() {
   const boardList = document.getElementById('boardList');
+  const postsToShow = currentSearchTerm ? filteredPosts : posts;
   
-  if (posts.length === 0) {
-    boardList.innerHTML = '<div style="padding: 20px; text-align: center; color: #666;">게시글이 없습니다.</div>';
+  if (postsToShow.length === 0) {
+    const message = currentSearchTerm ? 
+      `'${currentSearchTerm}' 검색 결과가 없습니다.` : 
+      '게시글이 없습니다.';
+    boardList.innerHTML = `<div style="padding: 20px; text-align: center; color: #666;">${message}</div>`;
     return;
   }
 
-  boardList.innerHTML = posts.map((post, index) => `
-    <div class="board-item" onclick="viewPost(${index})">
-      <div class="post-title">${post.title}</div>
-      <div class="post-meta">
-        ${post.date} | 파일: ${post.files.filter(f => f.file).length}개
+  boardList.innerHTML = postsToShow.map((post, index) => {
+    const originalIndex = currentSearchTerm ? posts.indexOf(post) : index;
+    return `
+      <div class="board-item" onclick="viewPost(${originalIndex})">
+        <div class="post-title">${highlightSearchTerm(post.title, currentSearchTerm)}</div>
+        <div class="post-meta">
+          ${post.date} | 파일: ${post.files.filter(f => f.file).length}개
+        </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 // 글쓰기 모달 표시
@@ -270,8 +279,44 @@ document.getElementById('password').addEventListener('keypress', function(e) {
   }
 });
 
+// 게시글 검색
+function searchPosts(searchTerm) {
+  currentSearchTerm = searchTerm.trim();
+  
+  if (!currentSearchTerm) {
+    filteredPosts = [];
+    renderPosts();
+    return;
+  }
+  
+  filteredPosts = posts.filter(post => {
+    const titleMatch = post.title.toLowerCase().includes(currentSearchTerm.toLowerCase());
+    const descriptionMatch = post.description.toLowerCase().includes(currentSearchTerm.toLowerCase());
+    return titleMatch || descriptionMatch;
+  });
+  
+  renderPosts();
+}
+
+// 검색 초기화
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  currentSearchTerm = '';
+  filteredPosts = [];
+  renderPosts();
+}
+
+// 검색어 하이라이트
+function highlightSearchTerm(text, searchTerm) {
+  if (!searchTerm) return text;
+  
+  const regex = new RegExp(`(${searchTerm})`, 'gi');
+  return text.replace(regex, '<mark style="background: #ffeb3b; padding: 1px 2px;">$1</mark>');
+}
+
 // 게시판 새로고침
 function refreshBoard() {
+  clearSearch();
   renderPosts();
 }
 

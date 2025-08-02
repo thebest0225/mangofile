@@ -95,6 +95,32 @@ html, body {
   gap: 12px;
 }
 
+.board-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.search-group {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  width: 200px;
+}
+
+.button-group {
+  display: flex;
+  gap: 4px;
+}
+
 .board-logo {
   height: 32px;
   width: auto;
@@ -268,6 +294,24 @@ html, body {
   
   .board-logo-section {
     gap: 8px;
+  }
+  
+  .board-controls {
+    width: 100%;
+    align-items: stretch;
+  }
+  
+  .search-group {
+    justify-content: stretch;
+  }
+  
+  .search-input {
+    flex: 1;
+    width: auto;
+  }
+  
+  .button-group {
+    justify-content: center;
   }
   
   .board-logo {
