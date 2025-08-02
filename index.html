@@ -334,14 +334,28 @@
                 return;
             }
 
+            let totalSize = 0;
             for (let i = 0; i < files.length; i++) {
                 const file = files[i];
-                if (file.size > 500 * 1024 * 1024) {
-                    alert(file.name + ' 파일이 500MB를 초과합니다.');
+                totalSize += file.size;
+                
+                if (file.size > 5 * 1024 * 1024) {
+                    alert(file.name + ' 파일이 5MB를 초과합니다. 더 작은 파일을 선택해주세요.');
                     document.getElementById('fileInput').value = '';
                     preview.innerHTML = '';
                     return;
                 }
+            }
+
+            if (totalSize > 10 * 1024 * 1024) {
+                alert('전체 파일 크기가 10MB를 초과합니다. 더 작은 파일들을 선택해주세요.');
+                document.getElementById('fileInput').value = '';
+                preview.innerHTML = '';
+                return;
+            }
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
 
                 const div = document.createElement('div');
                 div.className = 'file-item';
@@ -402,10 +416,36 @@
                 posts.unshift(post);
             }
 
-            localStorage.setItem('mangofile_posts', JSON.stringify(posts));
-            renderPosts();
-            hideWriteForm();
-            alert('저장되었습니다.');
+            // 저장 용량 체크
+            try {
+                const dataToSave = JSON.stringify(posts);
+                
+                // 대략적인 크기 체크 (문자 수 기준)
+                if (dataToSave.length > 4 * 1024 * 1024) { // 4MB 제한
+                    throw new Error('저장 용량 한계에 근접했습니다.');
+                }
+                
+                localStorage.setItem('mangofile_posts', dataToSave);
+                renderPosts();
+                hideWriteForm();
+                alert('저장되었습니다.');
+                
+            } catch (error) {
+                console.error('Save error:', error);
+                
+                if (error.name === 'QuotaExceededError' || error.message.includes('저장 용량')) {
+                    alert('저장 공간이 부족합니다.\n\n해결 방법:\n1. 기존 게시글 일부를 삭제하세요\n2. 더 작은 파일을 업로드하세요\n3. 파일 개수를 줄여보세요');
+                    
+                    // 변경사항 되돌리기
+                    if (isEditing && currentPost >= 0) {
+                        posts = JSON.parse(localStorage.getItem('mangofile_posts')) || [];
+                    } else {
+                        posts.shift();
+                    }
+                } else {
+                    alert('저장 중 오류가 발생했습니다: ' + error.message);
+                }
+            }
         }
 
         // 게시글 목록 렌더링
