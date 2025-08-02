@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mangofile</title>
-    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         * {
             margin: 0;
@@ -34,11 +32,6 @@
         .logo img {
             height: 100px;
             cursor: pointer;
-            transition: opacity 0.2s;
-        }
-
-        .logo img:hover {
-            opacity: 0.8;
         }
 
         .login-container {
@@ -65,27 +58,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .header-left img {
-            height: 40px;
-            cursor: pointer;
-        }
-
-        .header-left h1 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        .header-buttons {
-            display: flex;
-            gap: 10px;
         }
 
         .btn {
@@ -119,23 +91,13 @@
             background: #c82333;
         }
 
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-        }
-
         .form-control {
             width: 100%;
             padding: 12px;
             border: 1px solid #ddd;
             border-radius: 6px;
             font-size: 14px;
+            margin-bottom: 15px;
         }
 
         .write-form {
@@ -145,25 +107,10 @@
             display: none;
         }
 
-        .write-form-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
         .search-bar {
             padding: 15px 20px;
             border-bottom: 1px solid #dee2e6;
             background: #f8f9fa;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 14px;
         }
 
         .post-list {
@@ -218,15 +165,6 @@
             overflow-y: auto;
         }
 
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #dee2e6;
-        }
-
         .file-item {
             background: #f8f9fa;
             border: 1px solid #dee2e6;
@@ -241,26 +179,6 @@
         .hidden {
             display: none !important;
         }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .board-header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .header-buttons {
-                justify-content: center;
-            }
-            
-            .modal-content {
-                width: 95%;
-                padding: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -268,14 +186,12 @@
         <!-- 로그인 화면 -->
         <div id="loginScreen">
             <div class="logo">
-                <img src="logo.png" alt="Mangofile" onclick="location.reload()">
+                <img src="logo.png" alt="Mangofile">
             </div>
             <div class="login-container">
                 <h2 style="margin-bottom: 30px;">Mangofile</h2>
-                <div class="form-group">
-                    <input type="password" id="passwordInput" class="form-control" placeholder="비밀번호 입력 (0225)" maxlength="4">
-                </div>
-                <button class="btn" style="width: 100%;" onclick="handleLogin()">로그인</button>
+                <input type="password" id="passwordInput" class="form-control" placeholder="비밀번호 입력 (0225)" maxlength="4">
+                <button class="btn" style="width: 100%;" onclick="login()">로그인</button>
             </div>
         </div>
 
@@ -283,48 +199,39 @@
         <div id="boardScreen" class="hidden">
             <div class="board-container">
                 <div class="board-header">
-                    <div class="header-left">
-                        <img src="logo.png" alt="Mangofile" onclick="location.reload()">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <img src="logo.png" alt="Mangofile" style="height: 40px;">
                         <h1>Mangofile</h1>
                     </div>
-                    <div class="header-buttons">
+                    <div style="display: flex; gap: 10px;">
                         <button class="btn" onclick="showWriteForm()">글쓰기</button>
-                        <button class="btn btn-secondary" onclick="handleLogout()">로그아웃</button>
+                        <button class="btn btn-secondary" onclick="logout()">로그아웃</button>
                     </div>
                 </div>
 
                 <!-- 글쓰기 폼 -->
-                <div id="writeFormContainer" class="write-form">
-                    <div class="write-form-header">
-                        <h3 id="writeFormTitle">글쓰기</h3>
+                <div id="writeForm" class="write-form">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h3>글쓰기</h3>
                         <button class="btn btn-secondary" onclick="hideWriteForm()">취소</button>
                     </div>
-                    
-                    <div class="form-group">
-                        <label>제목</label>
-                        <input type="text" id="titleInput" class="form-control" placeholder="제목을 입력하세요">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>설명</label>
-                        <textarea id="descriptionInput" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>파일 업로드 (최대 4개)</label>
-                        <input type="file" id="fileInput" class="form-control" multiple onchange="handleFileChange()">
-                        <div id="filePreview" style="margin-top: 10px;"></div>
-                    </div>
-                    
-                    <div style="text-align: right;">
+
+                    <input type="text" id="titleInput" class="form-control" placeholder="제목을 입력하세요">
+                    <textarea id="descriptionInput" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
+
+                    <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (최대 4개)</label>
+                    <input type="file" id="fileInput" class="form-control" multiple>
+                    <div id="filePreview"></div>
+
+                    <div style="text-align: right; margin-top: 20px;">
                         <button class="btn btn-secondary" onclick="hideWriteForm()">취소</button>
-                        <button class="btn" onclick="savePost()">저장</button>
+                        <button class="btn" onclick="savePost()" style="margin-left: 10px;">저장</button>
                     </div>
                 </div>
 
                 <!-- 검색바 -->
                 <div class="search-bar">
-                    <input type="text" id="searchInput" class="search-input" placeholder="제목이나 설명으로 검색..." oninput="handleSearch()">
+                    <input type="text" id="searchInput" class="form-control" style="margin-bottom: 0;" placeholder="제목이나 설명으로 검색..." oninput="search()">
                 </div>
 
                 <!-- 게시글 목록 -->
@@ -337,14 +244,14 @@
         </div>
     </div>
 
-    <!-- 게시글 보기 모달 -->
-    <div id="viewModal" class="modal" onclick="closeModalOnBackground(event)">
+    <!-- 모달 -->
+    <div id="modal" class="modal" onclick="closeModal(event)">
         <div class="modal-content">
-            <div class="modal-header">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #dee2e6;">
                 <h3 id="modalTitle"></h3>
                 <div>
-                    <button class="btn" onclick="editCurrentPost()">수정</button>
-                    <button class="btn btn-danger" onclick="deleteCurrentPost()">삭제</button>
+                    <button class="btn" onclick="editPost()">수정</button>
+                    <button class="btn btn-danger" onclick="deletePost()">삭제</button>
                     <button class="btn btn-secondary" onclick="closeModal()">닫기</button>
                 </div>
             </div>
@@ -353,50 +260,28 @@
     </div>
 
     <script>
-        // 전역 변수
         let posts = JSON.parse(localStorage.getItem('mangofile_posts')) || [];
-        let currentEditingIndex = -1;
-        let currentViewingIndex = -1;
+        let currentPost = -1;
+        let isEditing = false;
         const PASSWORD = '0225';
 
         // 초기화
         document.addEventListener('DOMContentLoaded', function() {
-            checkLoginStatus();
-            
-            // 엔터키 로그인
+            if (sessionStorage.getItem('mangofile_login') === 'true') {
+                showBoard();
+            }
+
             document.getElementById('passwordInput').addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
-                    handleLogin();
+                    login();
                 }
             });
+
+            document.getElementById('fileInput').addEventListener('change', handleFiles);
         });
 
-        // 로그인 상태 확인
-        function checkLoginStatus() {
-            const isLoggedIn = sessionStorage.getItem('mangofile_login') === 'true';
-            if (isLoggedIn) {
-                showBoard();
-            } else {
-                showLogin();
-            }
-        }
-
-        // 로그인 화면 표시
-        function showLogin() {
-            document.getElementById('loginScreen').classList.remove('hidden');
-            document.getElementById('boardScreen').classList.add('hidden');
-            document.getElementById('passwordInput').focus();
-        }
-
-        // 게시판 화면 표시
-        function showBoard() {
-            document.getElementById('loginScreen').classList.add('hidden');
-            document.getElementById('boardScreen').classList.remove('hidden');
-            renderPosts();
-        }
-
-        // 로그인 처리
-        function handleLogin() {
+        // 로그인
+        function login() {
             const password = document.getElementById('passwordInput').value;
             if (password === PASSWORD) {
                 sessionStorage.setItem('mangofile_login', 'true');
@@ -404,35 +289,41 @@
             } else {
                 alert('비밀번호가 틀렸습니다.');
                 document.getElementById('passwordInput').value = '';
-                document.getElementById('passwordInput').focus();
             }
         }
 
-        // 로그아웃 처리
-        function handleLogout() {
+        // 로그아웃
+        function logout() {
             sessionStorage.removeItem('mangofile_login');
-            showLogin();
+            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('boardScreen').classList.add('hidden');
+            document.getElementById('passwordInput').value = '';
+        }
+
+        // 게시판 표시
+        function showBoard() {
+            document.getElementById('loginScreen').classList.add('hidden');
+            document.getElementById('boardScreen').classList.remove('hidden');
+            renderPosts();
         }
 
         // 글쓰기 폼 표시
         function showWriteForm() {
-            currentEditingIndex = -1;
-            document.getElementById('writeFormTitle').textContent = '글쓰기';
+            isEditing = false;
             document.getElementById('titleInput').value = '';
             document.getElementById('descriptionInput').value = '';
             document.getElementById('fileInput').value = '';
             document.getElementById('filePreview').innerHTML = '';
-            document.getElementById('writeFormContainer').style.display = 'block';
-            document.getElementById('titleInput').focus();
+            document.getElementById('writeForm').style.display = 'block';
         }
 
         // 글쓰기 폼 숨기기
         function hideWriteForm() {
-            document.getElementById('writeFormContainer').style.display = 'none';
+            document.getElementById('writeForm').style.display = 'none';
         }
 
         // 파일 선택 처리
-        function handleFileChange() {
+        function handleFiles() {
             const files = document.getElementById('fileInput').files;
             const preview = document.getElementById('filePreview');
             preview.innerHTML = '';
@@ -446,21 +337,21 @@
             for (let i = 0; i < files.length; i++) {
                 const file = files[i];
                 if (file.size > 500 * 1024 * 1024) {
-                    alert(`${file.name} 파일이 500MB를 초과합니다.`);
+                    alert(file.name + ' 파일이 500MB를 초과합니다.');
                     document.getElementById('fileInput').value = '';
                     preview.innerHTML = '';
                     return;
                 }
 
-                const fileDiv = document.createElement('div');
-                fileDiv.className = 'file-item';
-                fileDiv.innerHTML = `
+                const div = document.createElement('div');
+                div.className = 'file-item';
+                div.innerHTML = `
                     <div>
                         <strong>${file.name}</strong> (${formatFileSize(file.size)})
                     </div>
-                    <input type="text" placeholder="파일 설명" style="width: 200px; padding: 5px;" data-file-index="${i}">
+                    <input type="text" placeholder="파일 설명" style="width: 200px; padding: 5px;" data-file="${i}">
                 `;
-                preview.appendChild(fileDiv);
+                preview.appendChild(div);
             }
         }
 
@@ -468,7 +359,7 @@
         async function savePost() {
             const title = document.getElementById('titleInput').value.trim();
             const description = document.getElementById('descriptionInput').value.trim();
-            
+
             if (!title) {
                 alert('제목을 입력해주세요.');
                 return;
@@ -476,13 +367,12 @@
 
             const files = [];
             const fileInput = document.getElementById('fileInput');
-            const fileDescInputs = document.querySelectorAll('[data-file-index]');
 
             for (let i = 0; i < fileInput.files.length; i++) {
                 const file = fileInput.files[i];
-                const descInput = document.querySelector(`[data-file-index="${i}"]`);
-                const description = descInput ? descInput.value : '';
-                
+                const descInput = document.querySelector(`[data-file="${i}"]`);
+                const desc = descInput ? descInput.value : '';
+
                 try {
                     const fileData = await fileToBase64(file);
                     files.push({
@@ -490,10 +380,11 @@
                         size: file.size,
                         type: file.type,
                         data: fileData,
-                        description: description
+                        description: desc
                     });
                 } catch (error) {
                     alert('파일 처리 중 오류가 발생했습니다.');
+                    console.error('File error:', error);
                     return;
                 }
             }
@@ -505,8 +396,8 @@
                 date: new Date().toLocaleString('ko-KR')
             };
 
-            if (currentEditingIndex >= 0) {
-                posts[currentEditingIndex] = post;
+            if (isEditing && currentPost >= 0) {
+                posts[currentPost] = post;
             } else {
                 posts.unshift(post);
             }
@@ -514,13 +405,14 @@
             localStorage.setItem('mangofile_posts', JSON.stringify(posts));
             renderPosts();
             hideWriteForm();
+            alert('저장되었습니다.');
         }
 
         // 게시글 목록 렌더링
         function renderPosts() {
             const postList = document.getElementById('postList');
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            
+
             let filteredPosts = posts;
             if (searchTerm) {
                 filteredPosts = posts.filter(post => 
@@ -539,7 +431,7 @@
                 const originalIndex = posts.indexOf(post);
                 return `
                     <div class="post-item" onclick="viewPost(${originalIndex})">
-                        <div class="post-title">${highlightSearchTerm(post.title, searchTerm)}</div>
+                        <div class="post-title">${post.title}</div>
                         <div class="post-meta">${post.date} | 파일: ${post.files.length}개</div>
                     </div>
                 `;
@@ -548,11 +440,11 @@
 
         // 게시글 보기
         function viewPost(index) {
-            currentViewingIndex = index;
+            currentPost = index;
             const post = posts[index];
-            
+
             document.getElementById('modalTitle').textContent = post.title;
-            
+
             let content = `
                 <div style="margin-bottom: 15px;">
                     <strong>작성일:</strong> ${post.date}
@@ -579,77 +471,68 @@
             }
 
             document.getElementById('modalContent').innerHTML = content;
-            document.getElementById('viewModal').style.display = 'block';
+            document.getElementById('modal').style.display = 'block';
         }
 
         // 게시글 수정
-        function editCurrentPost() {
-            if (currentViewingIndex < 0) return;
-            
-            const post = posts[currentViewingIndex];
-            currentEditingIndex = currentViewingIndex;
-            
-            document.getElementById('writeFormTitle').textContent = '글 수정';
+        function editPost() {
+            if (currentPost < 0) return;
+
+            const post = posts[currentPost];
+            isEditing = true;
+
             document.getElementById('titleInput').value = post.title;
             document.getElementById('descriptionInput').value = post.description;
-            
-            // 기존 파일 정보 표시
+
             const preview = document.getElementById('filePreview');
             preview.innerHTML = '<div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-bottom: 10px;"><strong>기존 파일:</strong><br>' + 
                 post.files.map(f => `• ${f.name} ${f.description ? `(${f.description})` : ''}`).join('<br>') +
                 '<br><br><em>파일을 수정하려면 다시 선택해주세요.</em></div>';
-            
+
             document.getElementById('fileInput').value = '';
             closeModal();
-            document.getElementById('writeFormContainer').style.display = 'block';
-            document.getElementById('titleInput').focus();
+            document.getElementById('writeForm').style.display = 'block';
         }
 
         // 게시글 삭제
-        function deleteCurrentPost() {
-            if (currentViewingIndex < 0) return;
-            
+        function deletePost() {
+            if (currentPost < 0) return;
+
             if (confirm('정말 삭제하시겠습니까?')) {
-                posts.splice(currentViewingIndex, 1);
+                posts.splice(currentPost, 1);
                 localStorage.setItem('mangofile_posts', JSON.stringify(posts));
                 renderPosts();
                 closeModal();
             }
         }
 
-        // 검색 처리
-        function handleSearch() {
+        // 검색
+        function search() {
             renderPosts();
         }
 
         // 모달 닫기
-        function closeModal() {
-            document.getElementById('viewModal').style.display = 'none';
-        }
-
-        // 배경 클릭으로 모달 닫기
-        function closeModalOnBackground(event) {
-            if (event.target === event.currentTarget) {
-                closeModal();
-            }
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            document.getElementById('modal').style.display = 'none';
         }
 
         // 파일 다운로드
         function downloadFile(postIndex, fileIndex) {
             const file = posts[postIndex].files[fileIndex];
-            
+
             try {
                 const base64Data = file.data.split(',')[1];
                 const byteCharacters = atob(base64Data);
                 const byteNumbers = new Array(byteCharacters.length);
-                
+
                 for (let i = 0; i < byteCharacters.length; i++) {
                     byteNumbers[i] = byteCharacters.charCodeAt(i);
                 }
-                
+
                 const byteArray = new Uint8Array(byteNumbers);
                 const blob = new Blob([byteArray], { type: file.type });
-                
+
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
@@ -664,7 +547,7 @@
             }
         }
 
-        // 유틸리티 함수들
+        // 유틸리티 함수
         function formatFileSize(bytes) {
             if (bytes === 0) return '0 Bytes';
             const k = 1024;
@@ -680,12 +563,6 @@
                 reader.onload = () => resolve(reader.result);
                 reader.onerror = error => reject(error);
             });
-        }
-
-        function highlightSearchTerm(text, searchTerm) {
-            if (!searchTerm) return text;
-            const regex = new RegExp(`(${searchTerm})`, 'gi');
-            return text.replace(regex, '<mark style="background: #ffeb3b; padding: 1px 2px;">$1</mark>');
         }
     </script>
 </body>
