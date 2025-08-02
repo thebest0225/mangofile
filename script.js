@@ -93,11 +93,6 @@ function closeViewModal() {
   document.getElementById('viewModal').style.display = 'none';
 }
 
-// 파일 선택 이벤트 처리
-document.getElementById('multipleFiles').addEventListener('change', function(e) {
-  displaySelectedFiles(e.target.files);
-});
-
 function displaySelectedFiles(files) {
   const container = document.getElementById('selectedFiles');
   container.innerHTML = '';
@@ -129,7 +124,7 @@ function displaySelectedFiles(files) {
 }
 
 // 글 저장
-document.getElementById('postForm').addEventListener('submit', async function(e) {
+async function handlePostSubmit(e) {
   e.preventDefault();
   
   const title = document.getElementById('postTitle').value;
@@ -183,7 +178,7 @@ document.getElementById('postForm').addEventListener('submit', async function(e)
   localStorage.setItem('posts', JSON.stringify(posts));
   renderPosts();
   hideWriteForm();
-});
+}
 
 // 글 보기
 function viewPost(index) {
@@ -276,12 +271,7 @@ function formatFileSize(bytes) {
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 }
 
-// 엔터키 로그인
-document.getElementById('password').addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') {
-    login();
-  }
-});
+
 
 // 게시글 검색
 function searchPosts(searchTerm) {
@@ -375,6 +365,30 @@ function downloadFile(postIndex, fileIndex) {
 }
 
 // 페이지 로드 시 로그인 확인
-window.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   checkLogin();
+  
+  // 파일 선택 이벤트 처리
+  const fileInput = document.getElementById('multipleFiles');
+  if (fileInput) {
+    fileInput.addEventListener('change', function(e) {
+      displaySelectedFiles(e.target.files);
+    });
+  }
+  
+  // 엔터키 로그인
+  const passwordInput = document.getElementById('password');
+  if (passwordInput) {
+    passwordInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        login();
+      }
+    });
+  }
+  
+  // 글쓰기 폼 이벤트 처리
+  const postForm = document.getElementById('postForm');
+  if (postForm) {
+    postForm.addEventListener('submit', handlePostSubmit);
+  }
 });
