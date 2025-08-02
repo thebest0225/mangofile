@@ -22,7 +22,10 @@
     <div id="boardContainer" class="hidden">
       <div class="board">
         <div class="board-header">
-          <h3>게시판</h3>
+          <div class="header-left">
+            <img src="logo.png" alt="로고" class="logo" onclick="refreshBoard()">
+            <h3>게시판</h3>
+          </div>
           <div>
             <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
             <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>

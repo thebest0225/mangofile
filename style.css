@@ -46,6 +46,23 @@ html, body {
   align-items: center;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  height: 24px;
+  width: auto;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
 .board-list {
   padding: 0;
 }
@@ -174,6 +191,14 @@ html, body {
     padding: 8px 12px;
     flex-direction: column;
     gap: 8px;
+  }
+  
+  .header-left {
+    gap: 6px;
+  }
+  
+  .logo {
+    height: 20px;
   }
   
   .board-item {

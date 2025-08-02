@@ -261,5 +261,10 @@ document.getElementById('password').addEventListener('keypress', function(e) {
   }
 });
 
+// 게시판 새로고침
+function refreshBoard() {
+  renderPosts();
+}
+
 // 페이지 로드 시 로그인 확인
 checkLogin();
