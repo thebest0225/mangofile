@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +30,7 @@
   <div class="container">
     <!-- 메인 로고 -->
     <div class="main-logo">
-      <img src="logo.png" alt="Mangofile" onclick="location.reload()">
+      <img src="logo.png" alt="Mangofile" onclick="refreshPage()">
     </div>
     
     <!-- 로그인 폼 -->
@@ -38,10 +39,9 @@
         <img src="logo.png" alt="Mangofile" class="login-logo">
         <h2 class="login-title">Mangofile</h2>
       </div>
-      <form id="loginFormElement" name="loginForm">
+      <form>
         <div class="form-group">
-          <label for="password" class="sr-only">비밀번호</label>
-          <input type="password" id="password" name="password" class="form-control" placeholder="비밀번호를 입력하세요" maxlength="4">
+          <input type="password" id="password" class="form-control" placeholder="비밀번호를 입력하세요" maxlength="4">
         </div>
         <button type="button" onclick="login()" class="btn login-btn">로그인</button>
       </form>
@@ -52,11 +52,11 @@
       <div class="board">
         <div class="board-header">
           <div class="board-logo-section">
-            <img src="logo.png" alt="Mangofile" class="board-logo" onclick="refreshBoard()">
+            <img src="logo.png" alt="Mangofile" class="board-logo" onclick="refreshPage()">
             <h3>Mangofile</h3>
           </div>
           <div class="button-group">
-            <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
+            <button onclick="showWriteForm()" class="btn btn-small">글쓰기</button>
             <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>
           </div>
         </div>
@@ -67,23 +67,21 @@
             <h4 id="formTitle">글쓰기</h4>
             <button onclick="hideWriteForm()" class="btn btn-small" style="background: #6c757d;">취소</button>
           </div>
-          <form id="postForm" name="postForm">
+          <form onsubmit="handlePostSubmit(event)">
             <div class="form-group">
-              <label for="postTitle">제목</label>
-              <input type="text" id="postTitle" name="postTitle" class="form-control" required>
+              <label>제목</label>
+              <input type="text" id="postTitle" class="form-control" required>
             </div>
 
             <div class="form-group">
-              <label for="postDescription">설명</label>
-              <textarea id="postDescription" name="postDescription" class="form-control" rows="3"></textarea>
+              <label>설명</label>
+              <textarea id="postDescription" class="form-control" rows="3"></textarea>
             </div>
 
             <div class="form-group">
-              <label for="multipleFiles">파일 업로드 (최대 4개, 각 파일 최대 500MB)</label>
-              <div class="file-upload-group">
-                <input type="file" id="multipleFiles" name="multipleFiles" multiple class="form-control" style="margin-bottom: 8px;">
-                <div id="selectedFiles"></div>
-              </div>
+              <label>파일 업로드 (최대 4개, 각 파일 최대 500MB)</label>
+              <input type="file" id="multipleFiles" multiple class="form-control" onchange="handleFileSelect(event)">
+              <div id="selectedFiles"></div>
             </div>
 
             <div style="text-align: right; margin-top: 12px;">
@@ -100,8 +98,7 @@
         <!-- 검색 영역 -->
         <div class="search-section">
           <div class="search-group">
-            <label for="searchInput" class="sr-only">검색</label>
-            <input type="text" id="searchInput" name="searchInput" class="search-input" placeholder="제목/설명 검색..." onkeyup="searchPosts(this.value)">
+            <input type="text" id="searchInput" class="search-input" placeholder="제목/설명 검색..." oninput="searchPosts(this.value)">
             <button type="button" onclick="clearSearch()" class="btn btn-small" style="background: #6c757d;">초기화</button>
           </div>
         </div>
@@ -110,7 +107,7 @@
   </div>
 
   <!-- 글 상세보기 모달 -->
-  <div id="viewModal" class="modal">
+  <div id="viewModal" class="modal" onclick="closeModal(event)">
     <div class="modal-content">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
         <h4 id="viewTitle"></h4>

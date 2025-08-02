@@ -5,6 +5,23 @@ let currentEditId = null;
 let currentSearchTerm = '';
 const PASSWORD = '0225';
 
+// 페이지 로드 시 초기화
+document.addEventListener('DOMContentLoaded', function() {
+  checkLogin();
+  
+  // 엔터키 로그인
+  document.getElementById('password').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      login();
+    }
+  });
+});
+
+// 페이지 새로고침
+function refreshPage() {
+  location.reload();
+}
+
 // 로그인 확인
 function checkLogin() {
   const isLoggedIn = sessionStorage.getItem('isLoggedIn');
@@ -61,11 +78,12 @@ function renderPosts() {
 
   boardList.innerHTML = postsToShow.map((post, index) => {
     const originalIndex = currentSearchTerm ? posts.indexOf(post) : index;
+    const fileCount = post.files.filter(f => f.file).length;
     return `
       <div class="board-item" onclick="viewPost(${originalIndex})">
         <div class="post-title">${highlightSearchTerm(post.title, currentSearchTerm)}</div>
         <div class="post-meta">
-          ${post.date} | 파일: ${post.files.filter(f => f.file).length}개
+          ${post.date} | 파일: ${fileCount}개
         </div>
       </div>
     `;
@@ -73,14 +91,14 @@ function renderPosts() {
 }
 
 // 글쓰기 폼 표시
-function showWriteModal() {
+function showWriteForm() {
   currentEditId = null;
   document.getElementById('formTitle').textContent = '글쓰기';
-  document.getElementById('postForm').reset();
+  document.getElementById('postTitle').value = '';
+  document.getElementById('postDescription').value = '';
+  document.getElementById('multipleFiles').value = '';
   document.getElementById('selectedFiles').innerHTML = '';
   document.getElementById('writeForm').classList.remove('hidden');
-  
-  // 폼으로 스크롤
   document.getElementById('writeForm').scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -89,24 +107,23 @@ function hideWriteForm() {
   document.getElementById('writeForm').classList.add('hidden');
 }
 
-function closeViewModal() {
-  document.getElementById('viewModal').style.display = 'none';
-}
-
-function displaySelectedFiles(files) {
+// 파일 선택 처리
+function handleFileSelect(event) {
+  const files = event.target.files;
   const container = document.getElementById('selectedFiles');
   container.innerHTML = '';
   
   if (files.length > 4) {
     alert('최대 4개 파일까지만 업로드 가능합니다.');
-    document.getElementById('multipleFiles').value = '';
+    event.target.value = '';
     return;
   }
   
-  Array.from(files).forEach((file, index) => {
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
     if (file.size > 500 * 1024 * 1024) {
       alert(`${file.name} 파일 크기가 500MB를 초과합니다.`);
-      document.getElementById('multipleFiles').value = '';
+      event.target.value = '';
       container.innerHTML = '';
       return;
     }
@@ -117,10 +134,10 @@ function displaySelectedFiles(files) {
       <div style="font-size: 11px; margin-bottom: 4px;">
         <strong>${file.name}</strong> (${formatFileSize(file.size)})
       </div>
-      <input type="text" class="file-description form-control" placeholder="파일 설명" data-index="${index}">
+      <input type="text" class="file-description form-control" placeholder="파일 설명" data-index="${i}">
     `;
     container.appendChild(fileDiv);
-  });
+  }
 }
 
 // 글 저장
@@ -228,7 +245,7 @@ function editPost() {
   document.getElementById('postTitle').value = post.title;
   document.getElementById('postDescription').value = post.description;
   
-  // 기존 파일 정보 표시 (파일은 다시 선택해야 함)
+  // 기존 파일 정보 표시
   const container = document.getElementById('selectedFiles');
   container.innerHTML = '';
   
@@ -244,9 +261,7 @@ function editPost() {
     container.appendChild(infoDiv);
   }
   
-  // 파일 입력 초기화
   document.getElementById('multipleFiles').value = '';
-  
   closeViewModal();
   document.getElementById('writeForm').classList.remove('hidden');
   document.getElementById('writeForm').scrollIntoView({ behavior: 'smooth' });
@@ -262,16 +277,17 @@ function deletePost() {
   }
 }
 
-// 파일 크기 포맷
-function formatFileSize(bytes) {
-  if (bytes === 0) return '0 Bytes';
-  const k = 1024;
-  const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-  const i = Math.floor(Math.log(bytes) / Math.log(k));
-  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+// 모달 닫기 (배경 클릭 시)
+function closeModal(event) {
+  if (event.target === event.currentTarget) {
+    closeViewModal();
+  }
 }
 
-
+// 모달 닫기
+function closeViewModal() {
+  document.getElementById('viewModal').style.display = 'none';
+}
 
 // 게시글 검색
 function searchPosts(searchTerm) {
@@ -303,15 +319,17 @@ function clearSearch() {
 // 검색어 하이라이트
 function highlightSearchTerm(text, searchTerm) {
   if (!searchTerm) return text;
-  
   const regex = new RegExp(`(${searchTerm})`, 'gi');
   return text.replace(regex, '<mark style="background: #ffeb3b; padding: 1px 2px;">$1</mark>');
 }
 
-// 게시판 새로고침
-function refreshBoard() {
-  clearSearch();
-  renderPosts();
+// 파일 크기 포맷
+function formatFileSize(bytes) {
+  if (bytes === 0) return '0 Bytes';
+  const k = 1024;
+  const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 }
 
 // 파일을 Base64로 변환
@@ -324,8 +342,6 @@ function fileToBase64(file) {
   });
 }
 
-
-
 // 파일 다운로드
 function downloadFile(postIndex, fileIndex) {
   const post = posts[postIndex];
@@ -334,7 +350,6 @@ function downloadFile(postIndex, fileIndex) {
   
   if (file && file.file && file.file.data) {
     try {
-      // data:image/png;base64, 형태에서 data: 부분 제거
       const base64Data = file.file.data.split(',')[1];
       const byteCharacters = atob(base64Data);
       const byteNumbers = new Array(byteCharacters.length);
@@ -363,32 +378,3 @@ function downloadFile(postIndex, fileIndex) {
     alert('파일 데이터를 찾을 수 없습니다.');
   }
 }
-
-// 페이지 로드 시 로그인 확인
-document.addEventListener('DOMContentLoaded', function() {
-  checkLogin();
-  
-  // 파일 선택 이벤트 처리
-  const fileInput = document.getElementById('multipleFiles');
-  if (fileInput) {
-    fileInput.addEventListener('change', function(e) {
-      displaySelectedFiles(e.target.files);
-    });
-  }
-  
-  // 엔터키 로그인
-  const passwordInput = document.getElementById('password');
-  if (passwordInput) {
-    passwordInput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
-        login();
-      }
-    });
-  }
-  
-  // 글쓰기 폼 이벤트 처리
-  const postForm = document.getElementById('postForm');
-  if (postForm) {
-    postForm.addEventListener('submit', handlePostSubmit);
-  }
-});
