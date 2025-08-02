@@ -9,6 +9,11 @@
 </head>
 <body>
   <div class="container">
+    <!-- 메인 로고 -->
+    <div class="main-logo-container">
+      <img src="logo.png" alt="로고" class="main-logo" onclick="refreshBoard()">
+    </div>
+    
     <!-- 로그인 폼 -->
     <div id="loginForm" class="login-form">
       <h3 style="margin-bottom: 12px; text-align: center;">로그인</h3>
@@ -22,10 +27,7 @@
     <div id="boardContainer" class="hidden">
       <div class="board">
         <div class="board-header">
-          <div class="header-left">
-            <img src="logo.png" alt="로고" class="logo" onclick="refreshBoard()">
-            <h3>게시판</h3>
-          </div>
+          <h3>게시판</h3>
           <div>
             <button onclick="showWriteModal()" class="btn btn-small">글쓰기</button>
             <button onclick="logout()" class="btn btn-small" style="background: #6c757d;">로그아웃</button>

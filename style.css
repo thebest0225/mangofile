@@ -20,6 +20,22 @@ html, body {
   padding: 8px;
 }
 
+.main-logo-container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-logo {
+  height: 60px;
+  width: auto;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.main-logo:hover {
+  opacity: 0.8;
+}
+
 .login-form {
   background: white;
   border-radius: 6px;
@@ -44,23 +60,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo {
-  height: 32px;
-  width: auto;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.logo:hover {
-  opacity: 0.8;
 }
 
 .board-list {
@@ -187,18 +186,14 @@ html, body {
     padding: 12px;
   }
   
+  .main-logo {
+    height: 50px;
+  }
+  
   .board-header {
     padding: 8px 12px;
     flex-direction: column;
     gap: 8px;
-  }
-  
-  .header-left {
-    gap: 6px;
-  }
-  
-  .logo {
-    height: 28px;
   }
   
   .board-item {
