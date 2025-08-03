@@ -79,8 +79,11 @@ def create_post():
                     if file_size > 2 * 1024 * 1024 * 1024:  # 2GB
                         return jsonify({'error': f'{file.filename} 파일이 2GB를 초과합니다.'}), 400
                     
-                    # Object Storage에 파일 저장
-                    storage.upload_file(file_id, file)
+                    # Object Storage에 파일 저장 (임시 파일 사용)
+                    with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+                        file.save(tmp_file.name)
+                        storage.upload_from_file(file_id, tmp_file.name)
+                        os.unlink(tmp_file.name)  # 임시 파일 삭제
                     
                     files.append({
                         'id': file_id,
@@ -150,7 +153,11 @@ def update_post(post_id):
                 file = request.files[file_key]
                 if file.filename:
                     file_id = f"{post_id}_file_{i}_{file.filename}"
-                    storage.upload_file(file_id, file)
+                    # Object Storage에 파일 저장 (임시 파일 사용)
+                    with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+                        file.save(tmp_file.name)
+                        storage.upload_from_file(file_id, tmp_file.name)
+                        os.unlink(tmp_file.name)  # 임시 파일 삭제
                     
                     files.append({
                         'id': file_id,
