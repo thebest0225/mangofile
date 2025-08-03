@@ -1,11 +1,11 @@
+
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
-from replit.object_storage import Client
 import json
 import uuid
 import os
 from datetime import datetime
-import tempfile
+import shutil
 
 app = Flask(__name__)
 CORS(app)
@@ -14,10 +14,30 @@ CORS(app)
 app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024 * 1024  # 2GB
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-# Object Storage 클라이언트 초기화
-storage = Client()
+# 로컬 저장소 디렉터리 설정
+UPLOAD_DIR = 'uploads'
+DATA_DIR = 'data'
+
+# 디렉터리 생성
+os.makedirs(UPLOAD_DIR, exist_ok=True)
+os.makedirs(DATA_DIR, exist_ok=True)
 
 PASSWORD = '0225'
+
+def get_posts_file():
+    return os.path.join(DATA_DIR, 'posts.json')
+
+def load_posts():
+    posts_file = get_posts_file()
+    if os.path.exists(posts_file):
+        with open(posts_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return []
+
+def save_posts(posts):
+    posts_file = get_posts_file()
+    with open(posts_file, 'w', encoding='utf-8') as f:
+        json.dump(posts, f, ensure_ascii=False, indent=2)
 
 @app.route('/')
 def index():
@@ -42,10 +62,10 @@ def login():
 @app.route('/posts', methods=['GET'])
 def get_posts():
     try:
-        posts_data = storage.download_from_text('posts.json')
-        posts = json.loads(posts_data)
+        posts = load_posts()
         return jsonify(posts)
-    except:
+    except Exception as e:
+        print(f"Error loading posts: {str(e)}")
         return jsonify([])
 
 @app.route('/posts', methods=['POST'])
@@ -68,7 +88,9 @@ def create_post():
             if file_key in request.files:
                 file = request.files[file_key]
                 if file.filename:
-                    file_id = f"{post_id}_file_{i}_{file.filename}"
+                    # 안전한 파일명 생성
+                    safe_filename = f"{post_id}_file_{i}_{file.filename}"
+                    file_path = os.path.join(UPLOAD_DIR, safe_filename)
 
                     # 파일 크기 확인 (2GB 제한)
                     file.seek(0, os.SEEK_END)
@@ -78,13 +100,11 @@ def create_post():
                     if file_size > 2 * 1024 * 1024 * 1024:  # 2GB
                         return jsonify({'error': f'{file.filename} 파일이 2GB를 초과합니다.'}), 400
 
-                    # Object Storage에 파일 저장
-                    file_data = file.read()
-                    file.seek(0)  # 파일 포인터 리셋
-                    storage.upload_from_bytes(file_id, file_data)
+                    # 로컬 파일 시스템에 저장
+                    file.save(file_path)
 
                     files.append({
-                        'id': file_id,
+                        'id': safe_filename,
                         'name': file.filename,
                         'size': file_size,
                         'description': request.form.get(desc_key, '')
@@ -100,29 +120,22 @@ def create_post():
         }
 
         # 기존 게시글 목록 가져오기
-        try:
-            posts_data = storage.download_from_text('posts.json')
-            posts = json.loads(posts_data)
-        except:
-            posts = []
-
+        posts = load_posts()
         posts.insert(0, post)
 
         # 게시글 목록 저장
-        storage.upload_from_text('posts.json', json.dumps(posts, ensure_ascii=False))
+        save_posts(posts)
 
         return jsonify({'success': True, 'post': post})
 
     except Exception as e:
-        print(f"Upload error: {str(e)}")  # 서버 로그에 에러 출력
+        print(f"Upload error: {str(e)}")
         return jsonify({'error': f'업로드 실패: {str(e)}'}), 500
 
 @app.route('/posts/<post_id>', methods=['PUT'])
 def update_post(post_id):
     try:
-        # 기존 게시글 찾기
-        posts_data = storage.download_from_text('posts.json')
-        posts = json.loads(posts_data)
+        posts = load_posts()
 
         post_index = next((i for i, p in enumerate(posts) if p['id'] == post_id), None)
         if post_index is None:
@@ -135,10 +148,9 @@ def update_post(post_id):
         old_files = posts[post_index]['files']
         if any(f'file_{i}' in request.files for i in range(4)):
             for file_info in old_files:
-                try:
-                    storage.delete(file_info['id'])
-                except:
-                    pass
+                old_file_path = os.path.join(UPLOAD_DIR, file_info['id'])
+                if os.path.exists(old_file_path):
+                    os.remove(old_file_path)
 
         files = []
 
@@ -150,19 +162,17 @@ def update_post(post_id):
             if file_key in request.files:
                 file = request.files[file_key]
                 if file.filename:
-                    file_id = f"{post_id}_file_{i}_{file.filename}"
-                    # Object Storage에 파일 저장
-                    file_data = file.read()
-                    file.seek(0)  # 파일 포인터 리셋
-                    storage.upload_from_bytes(file_id, file_data)
-
+                    safe_filename = f"{post_id}_file_{i}_{file.filename}"
+                    file_path = os.path.join(UPLOAD_DIR, safe_filename)
+                    
+                    file.save(file_path)
+                    
                     files.append({
-                        'id': file_id,
+                        'id': safe_filename,
                         'name': file.filename,
-                        'size': len(file.read()),
+                        'size': os.path.getsize(file_path),
                         'description': request.form.get(desc_key, '')
                     })
-                    file.seek(0)
 
         # 파일이 새로 업로드되지 않은 경우 기존 파일 유지
         if not files:
@@ -175,18 +185,18 @@ def update_post(post_id):
             'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         })
 
-        storage.upload_from_text('posts.json', json.dumps(posts, ensure_ascii=False))
+        save_posts(posts)
 
         return jsonify({'success': True, 'post': posts[post_index]})
 
     except Exception as e:
+        print(f"Update error: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/posts/<post_id>', methods=['DELETE'])
 def delete_post(post_id):
     try:
-        posts_data = storage.download_from_text('posts.json')
-        posts = json.loads(posts_data)
+        posts = load_posts()
 
         post_index = next((i for i, p in enumerate(posts) if p['id'] == post_id), None)
         if post_index is None:
@@ -194,33 +204,34 @@ def delete_post(post_id):
 
         # 파일들 삭제
         for file_info in posts[post_index]['files']:
-            try:
-                storage.delete(file_info['id'])
-            except:
-                pass
+            file_path = os.path.join(UPLOAD_DIR, file_info['id'])
+            if os.path.exists(file_path):
+                os.remove(file_path)
 
         # 게시글 삭제
         posts.pop(post_index)
-        storage.upload_from_text('posts.json', json.dumps(posts, ensure_ascii=False))
+        save_posts(posts)
 
         return jsonify({'success': True})
 
     except Exception as e:
+        print(f"Delete error: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/download/<file_id>')
 def download_file(file_id):
     try:
-        # 임시 파일로 다운로드
-        with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
-            storage.download_file(file_id, tmp_file.name)
+        file_path = os.path.join(UPLOAD_DIR, file_id)
+        if not os.path.exists(file_path):
+            return jsonify({'error': '파일을 찾을 수 없습니다.'}), 404
 
-            # 원본 파일명 추출
-            filename = file_id.split('_', 3)[-1] if '_' in file_id else file_id
+        # 원본 파일명 추출
+        filename = file_id.split('_', 3)[-1] if '_' in file_id else file_id
 
-            return send_file(tmp_file.name, as_attachment=True, download_name=filename)
+        return send_file(file_path, as_attachment=True, download_name=filename)
 
     except Exception as e:
+        print(f"Download error: {str(e)}")
         return jsonify({'error': '파일을 찾을 수 없습니다.'}), 404
 
 if __name__ == '__main__':
