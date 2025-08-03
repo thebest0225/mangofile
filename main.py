@@ -92,11 +92,57 @@ def login():
 @app.route('/posts', methods=['GET'])
 def get_posts():
     try:
-        posts = load_posts()
-        return jsonify(posts)
+        page = int(request.args.get('page', 1))
+        tag = request.args.get('tag', '')
+        posts_per_page = 20
+        
+        all_posts = load_posts()
+        
+        # 태그 필터링
+        if tag:
+            if tag == '태그없음':
+                filtered_posts = [post for post in all_posts if not post.get('tags') or len(post.get('tags', [])) == 0]
+            else:
+                filtered_posts = [post for post in all_posts if post.get('tags') and tag in post.get('tags', [])]
+        else:
+            filtered_posts = all_posts
+        
+        # 페이지네이션
+        start_idx = (page - 1) * posts_per_page
+        end_idx = start_idx + posts_per_page
+        posts = filtered_posts[start_idx:end_idx]
+        
+        total_pages = (len(filtered_posts) + posts_per_page - 1) // posts_per_page
+        
+        # 모든 태그 수집
+        all_tags = set()
+        has_no_tag_posts = False
+        
+        for post in all_posts:
+            post_tags = post.get('tags', [])
+            if post_tags:
+                all_tags.update(post_tags)
+            else:
+                has_no_tag_posts = True
+        
+        all_tags = sorted(list(all_tags))
+        if has_no_tag_posts:
+            all_tags.append('태그없음')
+        
+        return jsonify({
+            'posts': posts,
+            'total_pages': total_pages,
+            'current_page': page,
+            'all_tags': all_tags
+        })
     except Exception as e:
         print(f"Error loading posts: {str(e)}")
-        return jsonify([])
+        return jsonify({
+            'posts': [],
+            'total_pages': 1,
+            'current_page': 1,
+            'all_tags': []
+        })
 
 @app.route('/posts', methods=['POST'])
 def create_post():
