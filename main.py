@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 # 파일 업로드 설정
-app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024 * 1024  # 2GB
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 # 로컬 저장소 디렉터리 설정
@@ -92,13 +92,13 @@ def create_post():
                     safe_filename = f"{post_id}_file_{i}_{file.filename}"
                     file_path = os.path.join(UPLOAD_DIR, safe_filename)
 
-                    # 파일 크기 확인 (2GB 제한)
+                    # 파일 크기 확인 (100MB 제한)
                     file.seek(0, os.SEEK_END)
                     file_size = file.tell()
                     file.seek(0)
 
-                    if file_size > 2 * 1024 * 1024 * 1024:  # 2GB
-                        return jsonify({'error': f'{file.filename} 파일이 2GB를 초과합니다.'}), 400
+                    if file_size > 100 * 1024 * 1024:  # 100MB
+                        return jsonify({'error': f'{file.filename} 파일이 100MB를 초과합니다.'}), 400
 
                     # 로컬 파일 시스템에 저장
                     file.save(file_path)

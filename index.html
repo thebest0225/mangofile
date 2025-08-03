@@ -242,24 +242,14 @@
                         <input type="text" id="titleInput" name="title" class="form-control" placeholder="제목을 입력하세요" required>
                         <textarea id="descriptionInput" name="description" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
 
-                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (최대 4개, 개당 최대 2GB)</label>
-                        <div id="fileInputs">
-                            <div class="file-input-group" style="margin-bottom: 10px;">
-                                <input type="file" name="file_0" class="form-control">
-                                <input type="text" name="description_0" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
-                            </div>
-                            <div class="file-input-group" style="margin-bottom: 10px;">
-                                <input type="file" name="file_1" class="form-control">
-                                <input type="text" name="description_1" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
-                            </div>
-                            <div class="file-input-group" style="margin-bottom: 10px;">
-                                <input type="file" name="file_2" class="form-control">
-                                <input type="text" name="description_2" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
-                            </div>
-                            <div class="file-input-group" style="margin-bottom: 10px;">
-                                <input type="file" name="file_3" class="form-control">
-                                <input type="text" name="description_3" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
-                            </div>
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (개당 최대 100MB)</label>
+                        <div style="margin-bottom: 15px;">
+                            <input type="file" id="multipleFileInput" multiple class="form-control" onchange="handleMultipleFileSelect()">
+                            <small style="color: #666;">Ctrl+클릭 또는 Shift+클릭으로 여러 파일 동시 선택 가능</small>
+                        </div>
+                        <div id="selectedFilesList"></div>
+                        <div style="text-align: right; margin-bottom: 10px;">
+                            <button type="button" class="btn btn-secondary" onclick="addMoreFiles()">파일 추가</button>
                         </div>
 
                         <div id="uploadProgress" class="upload-progress">
@@ -310,6 +300,7 @@
         let posts = [];
         let currentPost = null;
         let isEditing = false;
+        let selectedFiles = [];
 
         // 초기화
         document.addEventListener('DOMContentLoaded', function() {
@@ -394,11 +385,62 @@
             }
         }
 
+        // 다중 파일 선택 처리
+        function handleMultipleFileSelect() {
+            const fileInput = document.getElementById('multipleFileInput');
+            const files = fileInput.files;
+            
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                if (file.size > 100 * 1024 * 1024) {
+                    alert(`${file.name} 파일이 100MB를 초과합니다.`);
+                    continue;
+                }
+                selectedFiles.push(file);
+            }
+            
+            fileInput.value = '';
+            renderSelectedFiles();
+        }
+
+        // 파일 추가
+        function addMoreFiles() {
+            document.getElementById('multipleFileInput').click();
+        }
+
+        // 선택된 파일 목록 렌더링
+        function renderSelectedFiles() {
+            const container = document.getElementById('selectedFilesList');
+            container.innerHTML = '';
+            
+            selectedFiles.forEach((file, index) => {
+                const fileDiv = document.createElement('div');
+                fileDiv.className = 'file-item';
+                fileDiv.innerHTML = `
+                    <div>
+                        <strong>${file.name}</strong> (${formatFileSize(file.size)})
+                        <input type="text" class="form-control" placeholder="파일 설명" 
+                               style="margin-top: 5px;" id="desc_${index}">
+                    </div>
+                    <button type="button" class="btn btn-danger" onclick="removeFile(${index})">삭제</button>
+                `;
+                container.appendChild(fileDiv);
+            });
+        }
+
+        // 파일 삭제
+        function removeFile(index) {
+            selectedFiles.splice(index, 1);
+            renderSelectedFiles();
+        }
+
         // 글쓰기 폼 표시
         function showWriteForm() {
             isEditing = false;
             currentPost = null;
+            selectedFiles = [];
             document.getElementById('postForm').reset();
+            document.getElementById('selectedFilesList').innerHTML = '';
             document.getElementById('writeForm').style.display = 'block';
         }
 
@@ -411,7 +453,25 @@
         async function savePost(event) {
             event.preventDefault();
             
-            const formData = new FormData(document.getElementById('postForm'));
+            const title = document.getElementById('titleInput').value;
+            const description = document.getElementById('descriptionInput').value;
+            
+            if (!title.trim()) {
+                alert('제목을 입력해주세요.');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('title', title);
+            formData.append('description', description);
+            
+            // 선택된 파일들을 FormData에 추가
+            selectedFiles.forEach((file, index) => {
+                formData.append(`file_${index}`, file);
+                const descInput = document.getElementById(`desc_${index}`);
+                formData.append(`description_${index}`, descInput ? descInput.value : '');
+            });
+            
             const uploadProgress = document.getElementById('uploadProgress');
             const progressBar = document.getElementById('progressBar');
             
@@ -431,9 +491,18 @@
                 const response = await new Promise((resolve, reject) => {
                     xhr.onload = function() {
                         if (xhr.status === 200) {
-                            resolve(JSON.parse(xhr.responseText));
+                            try {
+                                resolve(JSON.parse(xhr.responseText));
+                            } catch (e) {
+                                reject(new Error('서버 응답 오류'));
+                            }
                         } else {
-                            reject(new Error(JSON.parse(xhr.responseText).error || '업로드 실패'));
+                            try {
+                                const errorData = JSON.parse(xhr.responseText);
+                                reject(new Error(errorData.error || '업로드 실패'));
+                            } catch (e) {
+                                reject(new Error('업로드 실패'));
+                            }
                         }
                     };
                     
@@ -441,20 +510,27 @@
                         reject(new Error('네트워크 오류'));
                     };
                     
+                    xhr.ontimeout = function() {
+                        reject(new Error('업로드 시간 초과'));
+                    };
+                    
                     const url = isEditing ? `/posts/${currentPost.id}` : '/posts';
                     const method = isEditing ? 'PUT' : 'POST';
                     
                     xhr.open(method, url);
+                    xhr.timeout = 300000; // 5분 타임아웃
                     xhr.send(formData);
                 });
                 
                 uploadProgress.style.display = 'none';
+                selectedFiles = [];
                 await loadPosts();
                 hideWriteForm();
                 alert('저장되었습니다.');
                 
             } catch (error) {
                 uploadProgress.style.display = 'none';
+                console.error('Upload error:', error);
                 alert('저장 실패: ' + error.message);
             }
         }
