@@ -242,7 +242,7 @@
                         <input type="text" id="titleInput" name="title" class="form-control" placeholder="제목을 입력하세요" required>
                         <textarea id="descriptionInput" name="description" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
 
-                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (개당 최대 100MB)</label>
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (개당 최대 200MB)</label>
                         <div style="margin-bottom: 15px;">
                             <input type="file" id="multipleFileInput" multiple class="form-control" onchange="handleMultipleFileSelect()">
                             <small style="color: #666;">Ctrl+클릭 또는 Shift+클릭으로 여러 파일 동시 선택 가능</small>
@@ -392,8 +392,8 @@
             
             for (let i = 0; i < files.length; i++) {
                 const file = files[i];
-                if (file.size > 100 * 1024 * 1024) {
-                    alert(`${file.name} 파일이 100MB를 초과합니다.`);
+                if (file.size > 200 * 1024 * 1024) {
+                    alert(`${file.name} 파일이 200MB를 초과합니다.`);
                     continue;
                 }
                 selectedFiles.push(file);
