@@ -197,6 +197,41 @@
             border-radius: 4px;
             transition: width 0.3s;
         }
+
+        .tag-button {
+            background: #e9ecef;
+            color: #495057;
+            border: 1px solid #ced4da;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tag-button:hover {
+            background: #dee2e6;
+        }
+
+        .tag-button.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .post-tags {
+            margin-top: 5px;
+        }
+
+        .post-tag {
+            display: inline-block;
+            background: #e9ecef;
+            color: #495057;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            margin-right: 4px;
+        }
     </style>
 </head>
 <body>
@@ -241,6 +276,7 @@
                     <form id="postForm" enctype="multipart/form-data">
                         <input type="text" id="titleInput" name="title" class="form-control" placeholder="제목을 입력하세요" required>
                         <textarea id="descriptionInput" name="description" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
+                        <input type="text" id="tagsInput" name="tags" class="form-control" placeholder="태그를 입력하세요 (쉼표로 구분)"></input>
 
                         <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (개당 최대 200MB)</label>
                         <div style="margin-bottom: 15px;">
@@ -268,13 +304,26 @@
 
                 <!-- 검색바 -->
                 <div class="search-bar">
-                    <input type="text" id="searchInput" class="form-control" style="margin-bottom: 0;" placeholder="제목이나 설명으로 검색..." oninput="search()">
+                    <input type="text" id="searchInput" class="form-control" style="margin-bottom: 10px;" placeholder="제목이나 설명으로 검색..." oninput="search()">
+                    <div id="tagFilter" style="margin-bottom: 10px;">
+                        <div style="font-weight: 500; margin-bottom: 5px;">태그 필터:</div>
+                        <div id="tagButtons" style="display: flex; flex-wrap: wrap; gap: 5px;"></div>
+                    </div>
                 </div>
 
                 <!-- 게시글 목록 -->
                 <div id="postList" class="post-list">
                     <div style="text-align: center; padding: 40px; color: #666;">
                         게시글을 불러오는 중...
+                    </div>
+                </div>
+
+                <!-- 페이지네이션 -->
+                <div id="pagination" style="padding: 20px; text-align: center; border-top: 1px solid #dee2e6; display: none;">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                        <button id="prevPage" class="btn btn-secondary" onclick="changePage(currentPage - 1)">&lt; 이전</button>
+                        <span id="pageInfo">1 / 1</span>
+                        <button id="nextPage" class="btn btn-secondary" onclick="changePage(currentPage + 1)">다음 &gt;</button>
                     </div>
                 </div>
             </div>
@@ -301,6 +350,10 @@
         let currentPost = null;
         let isEditing = false;
         let selectedFiles = [];
+        let currentPage = 1;
+        let totalPages = 1;
+        let allTags = [];
+        let selectedTag = '';
 
         // 초기화
         document.addEventListener('DOMContentLoaded', function() {
@@ -371,10 +424,20 @@
         }
 
         // 게시글 목록 로드
-        async function loadPosts() {
+        async function loadPosts(page = 1, tag = '') {
             try {
-                posts = await apiCall('/posts');
+                currentPage = page;
+                selectedTag = tag;
+                const url = `/posts?page=${page}${tag ? `&tag=${encodeURIComponent(tag)}` : ''}`;
+                const response = await apiCall(url);
+                
+                posts = response.posts || [];
+                totalPages = response.total_pages || 1;
+                allTags = response.all_tags || [];
+                
                 renderPosts();
+                renderTagButtons();
+                renderPagination();
             } catch (error) {
                 console.error('게시글 로드 실패:', error);
                 document.getElementById('postList').innerHTML = `
@@ -441,6 +504,7 @@
             selectedFiles = [];
             document.getElementById('postForm').reset();
             document.getElementById('selectedFilesList').innerHTML = '';
+            document.getElementById('tagsInput').value = '';
             document.getElementById('writeForm').style.display = 'block';
         }
 
@@ -455,6 +519,7 @@
             
             const title = document.getElementById('titleInput').value;
             const description = document.getElementById('descriptionInput').value;
+            const tags = document.getElementById('tagsInput').value;
             
             if (!title.trim()) {
                 alert('제목을 입력해주세요.');
@@ -464,6 +529,7 @@
             const formData = new FormData();
             formData.append('title', title);
             formData.append('description', description);
+            formData.append('tags', tags);
             
             // 선택된 파일들을 FormData에 추가
             selectedFiles.forEach((file, index) => {
@@ -558,6 +624,11 @@
                 <div class="post-item" onclick="viewPost('${post.id}')">
                     <div class="post-title">${post.title}</div>
                     <div class="post-meta">${post.date} | 파일: ${post.files.length}개</div>
+                    ${post.tags && post.tags.length > 0 ? `
+                        <div class="post-tags">
+                            ${post.tags.map(tag => `<span class="post-tag">${tag}</span>`).join('')}
+                        </div>
+                    ` : ''}
                 </div>
             `).join('');
         }
@@ -577,6 +648,12 @@
                     <strong>설명:</strong><br>
                     ${currentPost.description || '설명 없음'}
                 </div>
+                ${currentPost.tags && currentPost.tags.length > 0 ? `
+                    <div style="margin-bottom: 15px;">
+                        <strong>태그:</strong><br>
+                        ${currentPost.tags.map(tag => `<span class="post-tag">${tag}</span>`).join('')}
+                    </div>
+                ` : ''}
             `;
 
             if (currentPost.files.length > 0) {
@@ -605,6 +682,7 @@
             isEditing = true;
             document.getElementById('titleInput').value = currentPost.title;
             document.getElementById('descriptionInput').value = currentPost.description;
+            document.getElementById('tagsInput').value = currentPost.tags ? currentPost.tags.join(', ') : '';
 
             closeModal();
             document.getElementById('writeForm').style.display = 'block';
@@ -632,6 +710,51 @@
         // 검색
         function search() {
             renderPosts();
+        }
+
+        // 태그 버튼 렌더링
+        function renderTagButtons() {
+            const tagButtons = document.getElementById('tagButtons');
+            if (!allTags.length) {
+                tagButtons.innerHTML = '<span style="color: #666; font-size: 12px;">태그가 없습니다.</span>';
+                return;
+            }
+
+            tagButtons.innerHTML = `
+                <button class="tag-button ${!selectedTag ? 'active' : ''}" onclick="filterByTag('')">전체</button>
+                ${allTags.map(tag => `
+                    <button class="tag-button ${selectedTag === tag ? 'active' : ''}" onclick="filterByTag('${tag}')">${tag}</button>
+                `).join('')}
+            `;
+        }
+
+        // 태그로 필터링
+        function filterByTag(tag) {
+            loadPosts(1, tag);
+        }
+
+        // 페이지네이션 렌더링
+        function renderPagination() {
+            const pagination = document.getElementById('pagination');
+            const pageInfo = document.getElementById('pageInfo');
+            const prevBtn = document.getElementById('prevPage');
+            const nextBtn = document.getElementById('nextPage');
+
+            if (totalPages <= 1) {
+                pagination.style.display = 'none';
+                return;
+            }
+
+            pagination.style.display = 'block';
+            pageInfo.textContent = `${currentPage} / ${totalPages}`;
+            prevBtn.disabled = currentPage <= 1;
+            nextBtn.disabled = currentPage >= totalPages;
+        }
+
+        // 페이지 변경
+        function changePage(page) {
+            if (page < 1 || page > totalPages) return;
+            loadPosts(page, selectedTag);
         }
 
         // 모달 닫기

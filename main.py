@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify, send_file, abort
 from flask_cors import CORS
 import json
@@ -23,7 +22,7 @@ def is_blocked_user_agent(user_agent):
     """User-Agent가 차단 대상인지 확인"""
     if not user_agent:
         return False
-    
+
     user_agent_lower = user_agent.lower()
     for pattern in BLOCKED_USER_AGENTS:
         if re.search(pattern.lower(), user_agent_lower):
@@ -104,6 +103,8 @@ def create_post():
     try:
         title = request.form.get('title')
         description = request.form.get('description')
+        tags = request.form.get('tags', '')
+        tag_list = [tag.strip() for tag in tags.split(',') if tag.strip()] if tags else []
 
         if not title:
             return jsonify({'error': '제목을 입력해주세요.'}), 400
@@ -147,7 +148,8 @@ def create_post():
             'title': title,
             'description': description,
             'files': files,
-            'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'tags': tag_list
         }
 
         # 기존 게시글 목록 가져오기
@@ -174,6 +176,8 @@ def update_post(post_id):
 
         title = request.form.get('title')
         description = request.form.get('description')
+        tags = request.form.get('tags', '')
+        tag_list = [tag.strip() for tag in tags.split(',') if tag.strip()] if tags else []
 
         # 기존 파일들 삭제 (새 파일이 업로드된 경우)
         old_files = posts[post_index]['files']
@@ -195,9 +199,9 @@ def update_post(post_id):
                 if file.filename:
                     safe_filename = f"{post_id}_file_{i}_{file.filename}"
                     file_path = os.path.join(UPLOAD_DIR, safe_filename)
-                    
+
                     file.save(file_path)
-                    
+
                     files.append({
                         'id': safe_filename,
                         'name': file.filename,
@@ -213,7 +217,8 @@ def update_post(post_id):
             'title': title,
             'description': description,
             'files': files,
-            'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'tags': tag_list
         })
 
         save_posts(posts)
