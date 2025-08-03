@@ -1,14 +1,41 @@
 
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, abort
 from flask_cors import CORS
 import json
 import uuid
 import os
 from datetime import datetime
 import shutil
+import re
 
 app = Flask(__name__)
 CORS(app)
+
+# 차단할 User-Agent 패턴들
+BLOCKED_USER_AGENTS = [
+    r'.*bot.*', r'.*spider.*', r'.*crawler.*', r'.*scraper.*',
+    r'Googlebot', r'Bingbot', r'Slurp', r'DuckDuckBot', r'Baiduspider',
+    r'YandexBot', r'facebookexternalhit', r'Twitterbot', r'LinkedInBot',
+    r'WhatsApp', r'Applebot', r'ia_archiver', r'curl', r'wget'
+]
+
+def is_blocked_user_agent(user_agent):
+    """User-Agent가 차단 대상인지 확인"""
+    if not user_agent:
+        return False
+    
+    user_agent_lower = user_agent.lower()
+    for pattern in BLOCKED_USER_AGENTS:
+        if re.search(pattern.lower(), user_agent_lower):
+            return True
+    return False
+
+@app.before_request
+def block_bots():
+    """모든 요청 전에 봇 차단 검사"""
+    user_agent = request.headers.get('User-Agent', '')
+    if is_blocked_user_agent(user_agent):
+        abort(403)  # Forbidden
 
 # 파일 업로드 설정
 app.config['MAX_CONTENT_LENGTH'] = 200 * 1024 * 1024  # 200MB
@@ -50,6 +77,10 @@ def favicon():
 @app.route('/logo.png')
 def logo():
     return send_file('logo.png')
+
+@app.route('/robots.txt')
+def robots():
+    return send_file('robots.txt')
 
 @app.route('/login', methods=['POST'])
 def login():
