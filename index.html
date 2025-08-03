@@ -328,7 +328,8 @@
         // API 호출 함수
         async function apiCall(url, options = {}) {
             try {
-                const response = await fetch(url, options);
+                const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:5001' : '';
+                const response = await fetch(baseUrl + url, options);
                 const data = await response.json();
                 
                 if (!response.ok) {
@@ -565,8 +566,9 @@
 
         // 파일 다운로드
         function downloadFile(fileId, fileName) {
+            const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:5001' : '';
             const link = document.createElement('a');
-            link.href = `/download/${fileId}`;
+            link.href = baseUrl + `/download/${fileId}`;
             link.download = fileName;
             document.body.appendChild(link);
             link.click();
