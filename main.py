@@ -20,6 +20,14 @@ PASSWORD = '0225'
 def index():
     return send_file('index.html')
 
+@app.route('/favicon2.png')
+def favicon():
+    return send_file('favicon2.png')
+
+@app.route('/logo.png')
+def logo():
+    return send_file('logo.png')
+
 @app.route('/login', methods=['POST'])
 def login():
     data = request.json
