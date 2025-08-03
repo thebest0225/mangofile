@@ -80,7 +80,7 @@ def create_post():
                         return jsonify({'error': f'{file.filename} 파일이 2GB를 초과합니다.'}), 400
                     
                     # Object Storage에 파일 저장
-                    storage.upload_from_file(file_id, file)
+                    storage.upload_file(file_id, file)
                     
                     files.append({
                         'id': file_id,
@@ -150,7 +150,7 @@ def update_post(post_id):
                 file = request.files[file_key]
                 if file.filename:
                     file_id = f"{post_id}_file_{i}_{file.filename}"
-                    storage.upload_from_file(file_id, file)
+                    storage.upload_file(file_id, file)
                     
                     files.append({
                         'id': file_id,
@@ -209,7 +209,7 @@ def download_file(file_id):
     try:
         # 임시 파일로 다운로드
         with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
-            storage.download_to_file(file_id, tmp_file.name)
+            storage.download_file(file_id, tmp_file.name)
             
             # 원본 파일명 추출
             filename = file_id.split('_', 3)[-1] if '_' in file_id else file_id
