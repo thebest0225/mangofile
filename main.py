@@ -11,6 +11,10 @@ import tempfile
 app = Flask(__name__)
 CORS(app)
 
+# 파일 업로드 설정
+app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024 * 1024  # 2GB
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
 # Object Storage 클라이언트 초기화
 storage = Client()
 
@@ -67,16 +71,23 @@ def create_post():
                 if file.filename:
                     file_id = f"{post_id}_file_{i}_{file.filename}"
                     
+                    # 파일 크기 확인 (2GB 제한)
+                    file.seek(0, os.SEEK_END)
+                    file_size = file.tell()
+                    file.seek(0)
+                    
+                    if file_size > 2 * 1024 * 1024 * 1024:  # 2GB
+                        return jsonify({'error': f'{file.filename} 파일이 2GB를 초과합니다.'}), 400
+                    
                     # Object Storage에 파일 저장
                     storage.upload_from_file(file_id, file)
                     
                     files.append({
                         'id': file_id,
                         'name': file.filename,
-                        'size': len(file.read()),
+                        'size': file_size,
                         'description': request.form.get(desc_key, '')
                     })
-                    file.seek(0)  # 파일 포인터 리셋
         
         # 게시글 데이터 생성
         post = {
@@ -102,7 +113,8 @@ def create_post():
         return jsonify({'success': True, 'post': post})
         
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        print(f"Upload error: {str(e)}")  # 서버 로그에 에러 출력
+        return jsonify({'error': f'업로드 실패: {str(e)}'}), 500
 
 @app.route('/posts/<post_id>', methods=['PUT'])
 def update_post(post_id):
