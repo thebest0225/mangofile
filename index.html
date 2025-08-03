@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -180,6 +181,21 @@
         .hidden {
             display: none !important;
         }
+
+        .upload-progress {
+            display: none;
+            background: #e9ecef;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .progress-bar {
+            background: #007bff;
+            height: 8px;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
     </style>
 </head>
 <body>
@@ -221,17 +237,42 @@
                         <button class="btn btn-secondary" onclick="hideWriteForm()">취소</button>
                     </div>
 
-                    <input type="text" id="titleInput" class="form-control" placeholder="제목을 입력하세요">
-                    <textarea id="descriptionInput" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
+                    <form id="postForm" enctype="multipart/form-data">
+                        <input type="text" id="titleInput" name="title" class="form-control" placeholder="제목을 입력하세요" required>
+                        <textarea id="descriptionInput" name="description" class="form-control" rows="3" placeholder="설명을 입력하세요"></textarea>
 
-                    <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (최대 4개)</label>
-                    <input type="file" id="fileInput" class="form-control" multiple>
-                    <div id="filePreview"></div>
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">파일 업로드 (최대 4개, 개당 최대 2GB)</label>
+                        <div id="fileInputs">
+                            <div class="file-input-group" style="margin-bottom: 10px;">
+                                <input type="file" name="file_0" class="form-control">
+                                <input type="text" name="description_0" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
+                            </div>
+                            <div class="file-input-group" style="margin-bottom: 10px;">
+                                <input type="file" name="file_1" class="form-control">
+                                <input type="text" name="description_1" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
+                            </div>
+                            <div class="file-input-group" style="margin-bottom: 10px;">
+                                <input type="file" name="file_2" class="form-control">
+                                <input type="text" name="description_2" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
+                            </div>
+                            <div class="file-input-group" style="margin-bottom: 10px;">
+                                <input type="file" name="file_3" class="form-control">
+                                <input type="text" name="description_3" class="form-control" placeholder="파일 설명" style="margin-top: 5px;">
+                            </div>
+                        </div>
 
-                    <div style="text-align: right; margin-top: 20px;">
-                        <button class="btn btn-secondary" onclick="hideWriteForm()">취소</button>
-                        <button class="btn" onclick="savePost()" style="margin-left: 10px;">저장</button>
-                    </div>
+                        <div id="uploadProgress" class="upload-progress">
+                            <div style="margin-bottom: 5px;">업로드 중...</div>
+                            <div style="background: #e9ecef; border-radius: 4px;">
+                                <div id="progressBar" class="progress-bar" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: right; margin-top: 20px;">
+                            <button type="button" class="btn btn-secondary" onclick="hideWriteForm()">취소</button>
+                            <button type="submit" class="btn" style="margin-left: 10px;">저장</button>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- 검색바 -->
@@ -242,7 +283,7 @@
                 <!-- 게시글 목록 -->
                 <div id="postList" class="post-list">
                     <div style="text-align: center; padding: 40px; color: #666;">
-                        게시글이 없습니다.
+                        게시글을 불러오는 중...
                     </div>
                 </div>
             </div>
@@ -265,10 +306,9 @@
     </div>
 
     <script>
-        let posts = JSON.parse(localStorage.getItem('mangofile_posts')) || [];
-        let currentPost = -1;
+        let posts = [];
+        let currentPost = null;
         let isEditing = false;
-        const PASSWORD = '0225';
 
         // 초기화
         document.addEventListener('DOMContentLoaded', function() {
@@ -282,16 +322,42 @@
                 }
             });
 
-            document.getElementById('fileInput').addEventListener('change', handleFiles);
+            document.getElementById('postForm').addEventListener('submit', savePost);
         });
 
+        // API 호출 함수
+        async function apiCall(url, options = {}) {
+            try {
+                const response = await fetch(url, options);
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || '서버 오류가 발생했습니다.');
+                }
+                
+                return data;
+            } catch (error) {
+                console.error('API Error:', error);
+                throw error;
+            }
+        }
+
         // 로그인
-        function login() {
+        async function login() {
             const password = document.getElementById('passwordInput').value;
-            if (password === PASSWORD) {
+            
+            try {
+                await apiCall('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ password })
+                });
+                
                 sessionStorage.setItem('mangofile_login', 'true');
                 showBoard();
-            } else {
+            } catch (error) {
                 alert('비밀번호가 틀렸습니다.');
                 document.getElementById('passwordInput').value = '';
             }
@@ -306,19 +372,32 @@
         }
 
         // 게시판 표시
-        function showBoard() {
+        async function showBoard() {
             document.getElementById('loginScreen').classList.add('hidden');
             document.getElementById('boardScreen').classList.remove('hidden');
-            renderPosts();
+            await loadPosts();
+        }
+
+        // 게시글 목록 로드
+        async function loadPosts() {
+            try {
+                posts = await apiCall('/posts');
+                renderPosts();
+            } catch (error) {
+                console.error('게시글 로드 실패:', error);
+                document.getElementById('postList').innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        게시글을 불러올 수 없습니다.
+                    </div>
+                `;
+            }
         }
 
         // 글쓰기 폼 표시
         function showWriteForm() {
             isEditing = false;
-            document.getElementById('titleInput').value = '';
-            document.getElementById('descriptionInput').value = '';
-            document.getElementById('fileInput').value = '';
-            document.getElementById('filePreview').innerHTML = '';
+            currentPost = null;
+            document.getElementById('postForm').reset();
             document.getElementById('writeForm').style.display = 'block';
         }
 
@@ -327,129 +406,55 @@
             document.getElementById('writeForm').style.display = 'none';
         }
 
-        // 파일 선택 처리
-        function handleFiles() {
-            const files = document.getElementById('fileInput').files;
-            const preview = document.getElementById('filePreview');
-            preview.innerHTML = '';
-
-            if (files.length > 4) {
-                alert('최대 4개 파일까지만 업로드 가능합니다.');
-                document.getElementById('fileInput').value = '';
-                return;
-            }
-
-            let totalSize = 0;
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                totalSize += file.size;
-                
-                if (file.size > 500 * 1024 * 1024) {
-                    alert(file.name + ' 파일이 500MB를 초과합니다. 더 작은 파일을 선택해주세요.');
-                    document.getElementById('fileInput').value = '';
-                    preview.innerHTML = '';
-                    return;
-                }
-            }
-
-            if (totalSize > 2 * 1024 * 1024 * 1024) {
-                alert('전체 파일 크기가 2GB를 초과합니다. 더 작은 파일들을 선택해주세요.');
-                document.getElementById('fileInput').value = '';
-                preview.innerHTML = '';
-                return;
-            }
-
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-
-                const div = document.createElement('div');
-                div.className = 'file-item';
-                div.innerHTML = `
-                    <div>
-                        <strong>${file.name}</strong> (${formatFileSize(file.size)})
-                    </div>
-                    <input type="text" placeholder="파일 설명" style="width: 200px; padding: 5px;" data-file="${i}">
-                `;
-                preview.appendChild(div);
-            }
-        }
-
         // 게시글 저장
-        async function savePost() {
-            const title = document.getElementById('titleInput').value.trim();
-            const description = document.getElementById('descriptionInput').value.trim();
-
-            if (!title) {
-                alert('제목을 입력해주세요.');
-                return;
-            }
-
-            const files = [];
-            const fileInput = document.getElementById('fileInput');
-
-            for (let i = 0; i < fileInput.files.length; i++) {
-                const file = fileInput.files[i];
-                const descInput = document.querySelector(`[data-file="${i}"]`);
-                const desc = descInput ? descInput.value : '';
-
-                try {
-                    const fileData = await fileToBase64(file);
-                    files.push({
-                        name: file.name,
-                        size: file.size,
-                        type: file.type,
-                        data: fileData,
-                        description: desc
-                    });
-                } catch (error) {
-                    alert('파일 처리 중 오류가 발생했습니다.');
-                    console.error('File error:', error);
-                    return;
-                }
-            }
-
-            const post = {
-                title: title,
-                description: description,
-                files: files,
-                date: new Date().toLocaleString('ko-KR')
-            };
-
-            if (isEditing && currentPost >= 0) {
-                posts[currentPost] = post;
-            } else {
-                posts.unshift(post);
-            }
-
-            // 저장 용량 체크
+        async function savePost(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(document.getElementById('postForm'));
+            const uploadProgress = document.getElementById('uploadProgress');
+            const progressBar = document.getElementById('progressBar');
+            
             try {
-                const dataToSave = JSON.stringify(posts);
+                uploadProgress.style.display = 'block';
+                progressBar.style.width = '0%';
                 
-                // 대략적인 크기 체크 (문자 수 기준)
-                if (dataToSave.length > 100 * 1024 * 1024) { // 100MB 제한
-                    throw new Error('저장 용량 한계에 근접했습니다.');
-                }
+                const xhr = new XMLHttpRequest();
                 
-                localStorage.setItem('mangofile_posts', dataToSave);
-                renderPosts();
+                xhr.upload.addEventListener('progress', function(e) {
+                    if (e.lengthComputable) {
+                        const percentComplete = (e.loaded / e.total) * 100;
+                        progressBar.style.width = percentComplete + '%';
+                    }
+                });
+                
+                const response = await new Promise((resolve, reject) => {
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            resolve(JSON.parse(xhr.responseText));
+                        } else {
+                            reject(new Error(JSON.parse(xhr.responseText).error || '업로드 실패'));
+                        }
+                    };
+                    
+                    xhr.onerror = function() {
+                        reject(new Error('네트워크 오류'));
+                    };
+                    
+                    const url = isEditing ? `/posts/${currentPost.id}` : '/posts';
+                    const method = isEditing ? 'PUT' : 'POST';
+                    
+                    xhr.open(method, url);
+                    xhr.send(formData);
+                });
+                
+                uploadProgress.style.display = 'none';
+                await loadPosts();
                 hideWriteForm();
                 alert('저장되었습니다.');
                 
             } catch (error) {
-                console.error('Save error:', error);
-                
-                if (error.name === 'QuotaExceededError' || error.message.includes('저장 용량')) {
-                    alert('저장 공간이 부족합니다.\n\n해결 방법:\n1. 기존 게시글 일부를 삭제하세요\n2. 더 작은 파일을 업로드하세요\n3. 파일 개수를 줄여보세요');
-                    
-                    // 변경사항 되돌리기
-                    if (isEditing && currentPost >= 0) {
-                        posts = JSON.parse(localStorage.getItem('mangofile_posts')) || [];
-                    } else {
-                        posts.shift();
-                    }
-                } else {
-                    alert('저장 중 오류가 발생했습니다: ' + error.message);
-                }
+                uploadProgress.style.display = 'none';
+                alert('저장 실패: ' + error.message);
             }
         }
 
@@ -472,44 +477,41 @@
                 return;
             }
 
-            postList.innerHTML = filteredPosts.map((post, index) => {
-                const originalIndex = posts.indexOf(post);
-                return `
-                    <div class="post-item" onclick="viewPost(${originalIndex})">
-                        <div class="post-title">${post.title}</div>
-                        <div class="post-meta">${post.date} | 파일: ${post.files.length}개</div>
-                    </div>
-                `;
-            }).join('');
+            postList.innerHTML = filteredPosts.map(post => `
+                <div class="post-item" onclick="viewPost('${post.id}')">
+                    <div class="post-title">${post.title}</div>
+                    <div class="post-meta">${post.date} | 파일: ${post.files.length}개</div>
+                </div>
+            `).join('');
         }
 
         // 게시글 보기
-        function viewPost(index) {
-            currentPost = index;
-            const post = posts[index];
+        function viewPost(postId) {
+            currentPost = posts.find(p => p.id === postId);
+            if (!currentPost) return;
 
-            document.getElementById('modalTitle').textContent = post.title;
+            document.getElementById('modalTitle').textContent = currentPost.title;
 
             let content = `
                 <div style="margin-bottom: 15px;">
-                    <strong>작성일:</strong> ${post.date}
+                    <strong>작성일:</strong> ${currentPost.date}
                 </div>
                 <div style="margin-bottom: 15px;">
                     <strong>설명:</strong><br>
-                    ${post.description || '설명 없음'}
+                    ${currentPost.description || '설명 없음'}
                 </div>
             `;
 
-            if (post.files.length > 0) {
+            if (currentPost.files.length > 0) {
                 content += '<div><strong>첨부파일:</strong></div>';
-                post.files.forEach((file, fileIndex) => {
+                currentPost.files.forEach(file => {
                     content += `
                         <div class="file-item">
                             <div>
                                 <strong>${file.name}</strong> (${formatFileSize(file.size)})
                                 ${file.description ? `<br><small style="color: #666;">${file.description}</small>` : ''}
                             </div>
-                            <button class="btn" onclick="downloadFile(${index}, ${fileIndex})">다운로드</button>
+                            <button class="btn" onclick="downloadFile('${file.id}', '${file.name}')">다운로드</button>
                         </div>
                     `;
                 });
@@ -521,33 +523,32 @@
 
         // 게시글 수정
         function editPost() {
-            if (currentPost < 0) return;
+            if (!currentPost) return;
 
-            const post = posts[currentPost];
             isEditing = true;
+            document.getElementById('titleInput').value = currentPost.title;
+            document.getElementById('descriptionInput').value = currentPost.description;
 
-            document.getElementById('titleInput').value = post.title;
-            document.getElementById('descriptionInput').value = post.description;
-
-            const preview = document.getElementById('filePreview');
-            preview.innerHTML = '<div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-bottom: 10px;"><strong>기존 파일:</strong><br>' + 
-                post.files.map(f => `• ${f.name} ${f.description ? `(${f.description})` : ''}`).join('<br>') +
-                '<br><br><em>파일을 수정하려면 다시 선택해주세요.</em></div>';
-
-            document.getElementById('fileInput').value = '';
             closeModal();
             document.getElementById('writeForm').style.display = 'block';
         }
 
         // 게시글 삭제
-        function deletePost() {
-            if (currentPost < 0) return;
+        async function deletePost() {
+            if (!currentPost) return;
 
             if (confirm('정말 삭제하시겠습니까?')) {
-                posts.splice(currentPost, 1);
-                localStorage.setItem('mangofile_posts', JSON.stringify(posts));
-                renderPosts();
-                closeModal();
+                try {
+                    await apiCall(`/posts/${currentPost.id}`, {
+                        method: 'DELETE'
+                    });
+                    
+                    await loadPosts();
+                    closeModal();
+                    alert('삭제되었습니다.');
+                } catch (error) {
+                    alert('삭제 실패: ' + error.message);
+                }
             }
         }
 
@@ -563,33 +564,13 @@
         }
 
         // 파일 다운로드
-        function downloadFile(postIndex, fileIndex) {
-            const file = posts[postIndex].files[fileIndex];
-
-            try {
-                const base64Data = file.data.split(',')[1];
-                const byteCharacters = atob(base64Data);
-                const byteNumbers = new Array(byteCharacters.length);
-
-                for (let i = 0; i < byteCharacters.length; i++) {
-                    byteNumbers[i] = byteCharacters.charCodeAt(i);
-                }
-
-                const byteArray = new Uint8Array(byteNumbers);
-                const blob = new Blob([byteArray], { type: file.type });
-
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = file.name;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            } catch (error) {
-                alert('파일 다운로드 중 오류가 발생했습니다.');
-                console.error('Download error:', error);
-            }
+        function downloadFile(fileId, fileName) {
+            const link = document.createElement('a');
+            link.href = `/download/${fileId}`;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
 
         // 유틸리티 함수
@@ -599,15 +580,6 @@
             const sizes = ['Bytes', 'KB', 'MB', 'GB'];
             const i = Math.floor(Math.log(bytes) / Math.log(k));
             return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
-        }
-
-        function fileToBase64(file) {
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = () => resolve(reader.result);
-                reader.onerror = error => reject(error);
-            });
         }
     </script>
 </body>
